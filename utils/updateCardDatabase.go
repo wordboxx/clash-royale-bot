@@ -2,12 +2,17 @@ package utils
 
 import (
 	"fmt"
+	"slices"
 	"strings"
 
 	"github.com/gocolly/colly"
-)
+) // IMPORTS
 
-func GetCardNames(link string) {
+// GLOBAL VARIABLES
+var link string = "https://www.deckshop.pro/card/list"
+var cardNames []string
+
+func GetCardNames() []string {
 	/*
 	* This function finds the links to the card details page
 	* and extracts the card name from the URL.
@@ -37,14 +42,33 @@ func GetCardNames(link string) {
 	// SCRAPING STARTS HERE
 	// --- Find all links
 	c.OnHTML("a[href]", func(e *colly.HTMLElement) {
+		// Extract the link
 		href := e.Attr("href")
+
+		// If the link is not empty
 		if href != "" {
+
+			// Isolate links that start with "/card/detail/",
+			// because they contain the card name at the end
 			if strings.HasPrefix(href, "/card/detail/") {
+
+				// Extract card name from URL
+				// Example: /card/detail/ice-spirit
 				cardName := strings.TrimPrefix(href, "/card/detail/")
-				fmt.Println(cardName)
+
+				// Make sure card name is unique in the list
+				if slices.Contains(cardNames, cardName) {
+					return
+				}
+				cardNames = append(cardNames, cardName)
 			}
 		}
 	})
 
 	c.Visit(link)
+	return cardNames
+}
+
+func WriteToJson(cardNames []string) {
+	//TODO: Write the card names to a JSON file
 }
