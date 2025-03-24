@@ -48,27 +48,20 @@ func GetCardNames() map[string]interface{} {
 
 	// SCRAPING FUNCTIONS
 	// --- Find all links
+	// TODO: Add the card scrape function here OR send the info to a function that doesn't make a request/new collector
 	c.OnHTML("a[href]", func(e *colly.HTMLElement) {
-		// Extract the link
+		// Select link
 		href := e.Attr("href")
 
-		// If the link is not empty
-		if href != "" {
+		// Isolate card name from end of link
+		if strings.HasPrefix(href, "/card/detail/") {
+			cardName := strings.TrimPrefix(href, "/card/detail/")
 
-			// Isolate links that start with "/card/detail/",
-			// because they contain the card name at the end
-			if strings.HasPrefix(href, "/card/detail/") {
+			// Extract card's stats
+			cardNames[cardName] = GetCardInfo(cardName)
 
-				// Extract card name from URL
-				// Example: /card/detail/ice-spirit = ice-spirit
-				cardName := strings.TrimPrefix(href, "/card/detail/")
-
-				// Get card's stats
-				cardNames[cardName] = GetCardInfo(cardName)
-
-				// Sleep for 3 seconds to avoid getting blocked
-				time.Sleep(3 * time.Second)
-			}
+			// Sleep for 3 seconds to avoid getting blocked
+			time.Sleep(3 * time.Second)
 		}
 	})
 
