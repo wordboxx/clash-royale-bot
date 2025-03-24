@@ -1,150 +1,6697 @@
-[
-  "skeletons?evolution=1",
-  "ice-spirit?evolution=1",
-  "bomber?evolution=1",
-  "bats?evolution=1",
-  "zap?evolution=1",
-  "giant-snowball?evolution=1",
-  "archers?evolution=1",
-  "knight?evolution=1",
-  "cannon?evolution=1",
-  "firecracker?evolution=1",
-  "mortar?evolution=1",
-  "tesla?evolution=1",
-  "barbarians?evolution=1",
-  "royal-giant?evolution=1",
-  "royal-recruits?evolution=1",
-  "dart-goblin?evolution=1",
-  "musketeer?evolution=1",
-  "goblin-cage?evolution=1",
-  "valkyrie?evolution=1",
-  "battle-ram?evolution=1",
-  "wizard?evolution=1",
-  "wall-breakers?evolution=1",
-  "goblin-barrel?evolution=1",
-  "hunter?evolution=1",
-  "goblin-drill?evolution=1",
-  "electro-dragon?evolution=1",
-  "goblin-giant?evolution=1",
-  "pekka?evolution=1",
-  "lumberjack?evolution=1",
-  "mega-knight?evolution=1",
-  "little-prince",
-  "golden-knight",
-  "skeleton-king",
-  "mighty-miner",
-  "archer-queen",
-  "goblinstein",
-  "monk",
-  "the-log",
-  "miner",
-  "princess",
-  "ice-wizard",
-  "royal-ghost",
-  "bandit",
-  "fisherman",
-  "electro-wizard",
-  "inferno-dragon",
-  "phoenix",
-  "magic-archer",
-  "lumberjack",
-  "night-witch",
-  "mother-witch",
-  "ram-rider",
-  "graveyard",
-  "goblin-machine",
-  "sparky",
-  "mega-knight",
-  "lava-hound",
-  "mirror",
-  "barbarian-barrel",
-  "wall-breakers",
-  "goblin-curse",
-  "rage",
-  "goblin-barrel",
-  "guards",
-  "skeleton-army",
-  "clone",
-  "tornado",
-  "void",
-  "baby-dragon",
-  "dark-prince",
-  "freeze",
-  "poison",
-  "rune-giant",
-  "hunter",
-  "goblin-drill",
-  "witch",
-  "balloon",
-  "prince",
-  "electro-dragon",
-  "bowler",
-  "executioner",
-  "cannon-cart",
-  "giant-skeleton",
-  "lightning",
-  "goblin-giant",
-  "x-bow",
-  "pekka",
-  "electro-giant",
-  "golem",
-  "heal-spirit",
-  "ice-golem",
-  "suspicious-bush",
-  "tombstone",
-  "mega-minion",
-  "dart-goblin",
-  "earthquake",
-  "elixir-golem",
-  "fireball",
-  "mini-pekka",
-  "musketeer",
-  "goblin-cage",
-  "valkyrie",
-  "battle-ram",
-  "bomb-tower",
-  "flying-machine",
-  "hog-rider",
-  "battle-healer",
-  "furnace",
-  "zappies",
-  "goblin-demolisher",
-  "giant",
-  "goblin-hut",
-  "inferno-tower",
-  "wizard",
-  "royal-hogs",
-  "rocket",
-  "barbarian-hut",
-  "elixir-collector",
-  "three-musketeers",
-  "skeletons",
-  "electro-spirit",
-  "fire-spirit",
-  "ice-spirit",
-  "goblins",
-  "spear-goblins",
-  "bomber",
-  "bats",
-  "zap",
-  "giant-snowball",
-  "berserker",
-  "archers",
-  "arrows",
-  "knight",
-  "minions",
-  "cannon",
-  "goblin-gang",
-  "skeleton-barrel",
-  "firecracker",
-  "royal-delivery",
-  "skeleton-dragons",
-  "mortar",
-  "tesla",
-  "barbarians",
-  "minion-horde",
-  "rascals",
-  "royal-giant",
-  "elite-barbarians",
-  "royal-recruits"
-]
+{
+  "archer-queen": [
+    {
+      "Level": 1,
+      "Hitpoints": "1000",
+      "Damage": "225"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1100",
+      "Damage": "247"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1210",
+      "Damage": "272"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1330",
+      "Damage": "299"
+    }
+  ],
+  "archers": [
+    {
+      "Level": 1,
+      "Hitpoints": "119",
+      "Damage": "42 ×2"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "130",
+      "Damage": "46 ×2"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "143",
+      "Damage": "50 ×2"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "158",
+      "Damage": "55 ×2"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "173",
+      "Damage": "61 ×2"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "190",
+      "Damage": "67 ×2"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "209",
+      "Damage": "73 ×2"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "229",
+      "Damage": "81 ×2"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "252",
+      "Damage": "89 ×2"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "277",
+      "Damage": "97 ×2"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "304",
+      "Damage": "107 ×2"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "334",
+      "Damage": "118 ×2"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "367",
+      "Damage": "129 ×2"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "403",
+      "Damage": "142 ×2"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "442",
+      "Damage": "156 ×2"
+    }
+  ],
+  "archers?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "119",
+      "Damage": "42 ×2"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "130",
+      "Damage": "46 ×2"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "143",
+      "Damage": "50 ×2"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "158",
+      "Damage": "55 ×2"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "173",
+      "Damage": "61 ×2"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "190",
+      "Damage": "67 ×2"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "209",
+      "Damage": "73 ×2"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "229",
+      "Damage": "81 ×2"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "252",
+      "Damage": "89 ×2"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "277",
+      "Damage": "97 ×2"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "304",
+      "Damage": "107 ×2"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "334",
+      "Damage": "118 ×2"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "367",
+      "Damage": "129 ×2"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "403",
+      "Damage": "142 ×2"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "442",
+      "Damage": "156 ×2"
+    }
+  ],
+  "arrows": [
+    {
+      "Level": 1,
+      "Hitpoints": "144",
+      "Damage": "36"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "156",
+      "Damage": "39"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "174",
+      "Damage": "45"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "189",
+      "Damage": "48"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "210",
+      "Damage": "54"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "228",
+      "Damage": "57"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "252",
+      "Damage": "63"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "276",
+      "Damage": "69"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "303",
+      "Damage": "78"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "333",
+      "Damage": "84"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "366",
+      "Damage": "93"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "402",
+      "Damage": "102"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "444",
+      "Damage": "111"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "486",
+      "Damage": "123"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "534",
+      "Damage": "135"
+    }
+  ],
+  "baby-dragon": null,
+  "balloon": [
+    {
+      "Level": 1,
+      "Hitpoints": "1050",
+      "Damage": "150"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1155",
+      "Damage": "165"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1270",
+      "Damage": "181"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1396",
+      "Damage": "199"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1533",
+      "Damage": "219"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1680",
+      "Damage": "240"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1848",
+      "Damage": "264"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "2026",
+      "Damage": "289"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "2226",
+      "Damage": "318"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "2446",
+      "Damage": "349"
+    }
+  ],
+  "bandit": [
+    {
+      "Level": 1,
+      "Hitpoints": "750",
+      "Damage": "160"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "825",
+      "Damage": "176"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "907",
+      "Damage": "193"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "997",
+      "Damage": "212"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1095",
+      "Damage": "233"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1200",
+      "Damage": "256"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1320",
+      "Damage": "281"
+    }
+  ],
+  "barbarian-barrel": [
+    {
+      "Level": 1,
+      "Hitpoints": "151",
+      "Damage": "Level 6"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "166",
+      "Damage": "Level 7"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "182",
+      "Damage": "Level 8"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "200",
+      "Damage": "Level 9"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "220",
+      "Damage": "Level 10"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "241",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "265",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "291",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "320",
+      "Damage": "Level 14"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "351",
+      "Damage": "Level 15"
+    }
+  ],
+  "barbarian-hut": [
+    {
+      "Level": 1,
+      "Hitpoints": "550",
+      "Damage": "Level 3"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "605",
+      "Damage": "Level 4"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "665",
+      "Damage": "Level 5"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "731",
+      "Damage": "Level 6"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "803",
+      "Damage": "Level 7"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "880",
+      "Damage": "Level 8"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "968",
+      "Damage": "Level 9"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1061",
+      "Damage": "Level 10"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1166",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1281",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1408",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1545",
+      "Damage": "Level 14"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1699",
+      "Damage": "Level 15"
+    }
+  ],
+  "barbarians": [
+    {
+      "Level": 1,
+      "Hitpoints": "262",
+      "Damage": "75 ×5"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "288",
+      "Damage": "82 ×5"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "317",
+      "Damage": "90 ×5"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "348",
+      "Damage": "99 ×5"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "382",
+      "Damage": "109 ×5"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "419",
+      "Damage": "120 ×5"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "461",
+      "Damage": "132 ×5"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "505",
+      "Damage": "144 ×5"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "555",
+      "Damage": "159 ×5"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "610",
+      "Damage": "174 ×5"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "670",
+      "Damage": "192 ×5"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "736",
+      "Damage": "210 ×5"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "809",
+      "Damage": "231 ×5"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "888",
+      "Damage": "254 ×5"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "974",
+      "Damage": "279 ×5"
+    }
+  ],
+  "barbarians?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "262",
+      "Damage": "75 ×5"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "288",
+      "Damage": "82 ×5"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "317",
+      "Damage": "90 ×5"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "348",
+      "Damage": "99 ×5"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "382",
+      "Damage": "109 ×5"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "419",
+      "Damage": "120 ×5"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "461",
+      "Damage": "132 ×5"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "505",
+      "Damage": "144 ×5"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "555",
+      "Damage": "159 ×5"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "610",
+      "Damage": "174 ×5"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "670",
+      "Damage": "192 ×5"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "736",
+      "Damage": "210 ×5"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "809",
+      "Damage": "231 ×5"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "888",
+      "Damage": "254 ×5"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "974",
+      "Damage": "279 ×5"
+    }
+  ],
+  "bats": null,
+  "bats?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "32",
+      "Damage": "32 ×5"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "35",
+      "Damage": "35 ×5"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "38",
+      "Damage": "38 ×5"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "42",
+      "Damage": "42 ×5"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "46",
+      "Damage": "46 ×5"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "51",
+      "Damage": "51 ×5"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "56",
+      "Damage": "56 ×5"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "61",
+      "Damage": "61 ×5"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "67",
+      "Damage": "67 ×5"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "74",
+      "Damage": "74 ×5"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "81",
+      "Damage": "81 ×5"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "89",
+      "Damage": "89 ×5"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "98",
+      "Damage": "98 ×5"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "108",
+      "Damage": "108 ×5"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "119",
+      "Damage": "119 ×5"
+    }
+  ],
+  "battle-healer": [
+    {
+      "Level": 1,
+      "Hitpoints": "810",
+      "Damage": "70"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "891",
+      "Damage": "77"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "980",
+      "Damage": "84"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1077",
+      "Damage": "93"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1182",
+      "Damage": "102"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1296",
+      "Damage": "112"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1425",
+      "Damage": "123"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1563",
+      "Damage": "135"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1717",
+      "Damage": "148"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1887",
+      "Damage": "163"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "2073",
+      "Damage": "179"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "2276",
+      "Damage": "196"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "2502",
+      "Damage": "216"
+    }
+  ],
+  "battle-ram": [
+    {
+      "Level": 1,
+      "Hitpoints": "456",
+      "Damage": "Level 3"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "501",
+      "Damage": "Level 4"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "551",
+      "Damage": "Level 5"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "606",
+      "Damage": "Level 6"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "665",
+      "Damage": "Level 7"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "729",
+      "Damage": "Level 8"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "802",
+      "Damage": "Level 9"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "880",
+      "Damage": "Level 10"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "966",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1062",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1167",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1281",
+      "Damage": "Level 14"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1409",
+      "Damage": "Level 15"
+    }
+  ],
+  "battle-ram?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "456",
+      "Damage": "Level 3"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "501",
+      "Damage": "Level 4"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "551",
+      "Damage": "Level 5"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "606",
+      "Damage": "Level 6"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "665",
+      "Damage": "Level 7"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "729",
+      "Damage": "Level 8"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "802",
+      "Damage": "Level 9"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "880",
+      "Damage": "Level 10"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "966",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1062",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1167",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1281",
+      "Damage": "Level 14"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1409",
+      "Damage": "Level 15"
+    }
+  ],
+  "berserker": [
+    {
+      "Level": 1,
+      "Hitpoints": "325",
+      "Damage": "40"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "357",
+      "Damage": "44"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "393",
+      "Damage": "48"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "432",
+      "Damage": "53"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "474",
+      "Damage": "58"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "520",
+      "Damage": "64"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "572",
+      "Damage": "70"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "627",
+      "Damage": "77"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "689",
+      "Damage": "84"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "757",
+      "Damage": "93"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "832",
+      "Damage": "102"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "913",
+      "Damage": "112"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1004",
+      "Damage": "123"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "1101",
+      "Damage": "135"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "1209",
+      "Damage": "148"
+    }
+  ],
+  "bomb-tower": [
+    {
+      "Level": 1,
+      "Hitpoints": "640",
+      "Damage": "105"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "704",
+      "Damage": "115"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "774",
+      "Damage": "127"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "851",
+      "Damage": "139"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "934",
+      "Damage": "153"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1024",
+      "Damage": "168"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1126",
+      "Damage": "184"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1235",
+      "Damage": "202"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1356",
+      "Damage": "222"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1491",
+      "Damage": "244"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1638",
+      "Damage": "268"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1798",
+      "Damage": "295"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1977",
+      "Damage": "324"
+    }
+  ],
+  "bomber": null,
+  "bomber?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "130",
+      "Damage": "88"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "143",
+      "Damage": "96"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "157",
+      "Damage": "106"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "172",
+      "Damage": "117"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "189",
+      "Damage": "128"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "208",
+      "Damage": "140"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "228",
+      "Damage": "154"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "250",
+      "Damage": "169"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "275",
+      "Damage": "186"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "302",
+      "Damage": "205"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "332",
+      "Damage": "225"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "365",
+      "Damage": "247"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "401",
+      "Damage": "271"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "440",
+      "Damage": "298"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "483",
+      "Damage": "327"
+    }
+  ],
+  "bowler": [
+    {
+      "Level": 1,
+      "Hitpoints": "1300",
+      "Damage": "180"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1430",
+      "Damage": "198"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1573",
+      "Damage": "217"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1729",
+      "Damage": "239"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1898",
+      "Damage": "262"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "2080",
+      "Damage": "288"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "2288",
+      "Damage": "316"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "2509",
+      "Damage": "347"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "2756",
+      "Damage": "381"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "3029",
+      "Damage": "419"
+    }
+  ],
+  "cannon": [
+    {
+      "Level": 1,
+      "Hitpoints": "322",
+      "Damage": "83"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "354",
+      "Damage": "91"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "389",
+      "Damage": "100"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "428",
+      "Damage": "110"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "470",
+      "Damage": "121"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "515",
+      "Damage": "132"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "566",
+      "Damage": "146"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "621",
+      "Damage": "160"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "682",
+      "Damage": "175"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "750",
+      "Damage": "193"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "824",
+      "Damage": "212"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "904",
+      "Damage": "233"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "994",
+      "Damage": "256"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "1091",
+      "Damage": "281"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "1197",
+      "Damage": "308"
+    }
+  ],
+  "cannon-cart": null,
+  "cannon?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "322",
+      "Damage": "83"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "354",
+      "Damage": "91"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "389",
+      "Damage": "100"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "428",
+      "Damage": "110"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "470",
+      "Damage": "121"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "515",
+      "Damage": "132"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "566",
+      "Damage": "146"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "621",
+      "Damage": "160"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "682",
+      "Damage": "175"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "750",
+      "Damage": "193"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "824",
+      "Damage": "212"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "904",
+      "Damage": "233"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "994",
+      "Damage": "256"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "1091",
+      "Damage": "281"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "1197",
+      "Damage": "308"
+    }
+  ],
+  "clone": null,
+  "dark-prince": [
+    {
+      "Level": 1,
+      "Hitpoints": "150",
+      "Damage": "155"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "165",
+      "Damage": "170"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "181",
+      "Damage": "187"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "199",
+      "Damage": "206"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "219",
+      "Damage": "226"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "240",
+      "Damage": "248"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "264",
+      "Damage": "272"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "289",
+      "Damage": "299"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "318",
+      "Damage": "328"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "349",
+      "Damage": "361"
+    }
+  ],
+  "dart-goblin": [
+    {
+      "Level": 1,
+      "Hitpoints": "123",
+      "Damage": "67"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "135",
+      "Damage": "73"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "148",
+      "Damage": "81"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "163",
+      "Damage": "89"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "179",
+      "Damage": "97"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "196",
+      "Damage": "107"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "216",
+      "Damage": "117"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "237",
+      "Damage": "129"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "260",
+      "Damage": "142"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "286",
+      "Damage": "156"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "314",
+      "Damage": "171"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "345",
+      "Damage": "188"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "380",
+      "Damage": "207"
+    }
+  ],
+  "dart-goblin?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "123",
+      "Damage": "67"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "135",
+      "Damage": "73"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "148",
+      "Damage": "81"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "163",
+      "Damage": "89"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "179",
+      "Damage": "97"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "196",
+      "Damage": "107"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "216",
+      "Damage": "117"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "237",
+      "Damage": "129"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "260",
+      "Damage": "142"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "286",
+      "Damage": "156"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "314",
+      "Damage": "171"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "345",
+      "Damage": "188"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "380",
+      "Damage": "207"
+    }
+  ],
+  "earthquake": [
+    {
+      "Level": 1,
+      "Hitpoints": "117",
+      "Damage": "408"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "126",
+      "Damage": "447"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "141",
+      "Damage": "492"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "153",
+      "Damage": "540"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "168",
+      "Damage": "594"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "186",
+      "Damage": "651"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "204",
+      "Damage": "717"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "225",
+      "Damage": "786"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "246",
+      "Damage": "864"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "270",
+      "Damage": "948"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "297",
+      "Damage": "1044"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "327",
+      "Damage": "1146"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "360",
+      "Damage": "1260"
+    }
+  ],
+  "electro-dragon": [
+    {
+      "Level": 1,
+      "Hitpoints": "594",
+      "Damage": "120"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "653",
+      "Damage": "132"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "718",
+      "Damage": "145"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "790",
+      "Damage": "159"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "867",
+      "Damage": "175"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "950",
+      "Damage": "192"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1045",
+      "Damage": "211"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1146",
+      "Damage": "231"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1259",
+      "Damage": "254"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1384",
+      "Damage": "279"
+    }
+  ],
+  "electro-dragon?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "594",
+      "Damage": "120"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "653",
+      "Damage": "132"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "718",
+      "Damage": "145"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "790",
+      "Damage": "159"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "867",
+      "Damage": "175"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "950",
+      "Damage": "192"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1045",
+      "Damage": "211"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1146",
+      "Damage": "231"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1259",
+      "Damage": "254"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1384",
+      "Damage": "279"
+    }
+  ],
+  "electro-giant": [
+    {
+      "Level": 1,
+      "Hitpoints": "2410",
+      "Damage": "102"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "2651",
+      "Damage": "112"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "2916",
+      "Damage": "123"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "3205",
+      "Damage": "135"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "3518",
+      "Damage": "148"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "3856",
+      "Damage": "163"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "4241",
+      "Damage": "179"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "4651",
+      "Damage": "196"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "5109",
+      "Damage": "216"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "5615",
+      "Damage": "237"
+    }
+  ],
+  "electro-spirit": [
+    {
+      "Level": 1,
+      "Hitpoints": "90",
+      "Damage": "39"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "99",
+      "Damage": "42"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "108",
+      "Damage": "47"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "119",
+      "Damage": "51"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "131",
+      "Damage": "56"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "144",
+      "Damage": "62"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "158",
+      "Damage": "68"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "173",
+      "Damage": "75"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "190",
+      "Damage": "82"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "209",
+      "Damage": "90"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "230",
+      "Damage": "99"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "252",
+      "Damage": "109"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "278",
+      "Damage": "120"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "305",
+      "Damage": "132"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "334",
+      "Damage": "145"
+    }
+  ],
+  "electro-wizard": [
+    {
+      "Level": 1,
+      "Hitpoints": "590",
+      "Damage": "186"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "649",
+      "Damage": "204"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "713",
+      "Damage": "225"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "784",
+      "Damage": "247"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "861",
+      "Damage": "271"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "944",
+      "Damage": "297"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1038",
+      "Damage": "327"
+    }
+  ],
+  "elite-barbarians": [
+    {
+      "Level": 1,
+      "Hitpoints": "524",
+      "Damage": "150 ×2"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "576",
+      "Damage": "165 ×2"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "634",
+      "Damage": "181 ×2"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "696",
+      "Damage": "199 ×2"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "765",
+      "Damage": "219 ×2"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "838",
+      "Damage": "240 ×2"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "922",
+      "Damage": "264 ×2"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1011",
+      "Damage": "289 ×2"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1110",
+      "Damage": "318 ×2"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1220",
+      "Damage": "349 ×2"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1341",
+      "Damage": "384 ×2"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1472",
+      "Damage": "421 ×2"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1619",
+      "Damage": "463 ×2"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "1776",
+      "Damage": "508 ×2"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "1949",
+      "Damage": "558 ×2"
+    }
+  ],
+  "elixir-collector": [
+    {
+      "Level": 1,
+      "Hitpoints": "505",
+      "Damage": "505"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "555",
+      "Damage": "555"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "611",
+      "Damage": "611"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "671",
+      "Damage": "671"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "737",
+      "Damage": "737"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "808",
+      "Damage": "808"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "888",
+      "Damage": "888"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "974",
+      "Damage": "974"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1070",
+      "Damage": "1070"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1176",
+      "Damage": "1176"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1292",
+      "Damage": "1292"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1419",
+      "Damage": "1419"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1560",
+      "Damage": "1560"
+    }
+  ],
+  "elixir-golem": [
+    {
+      "Level": 1,
+      "Hitpoints": "680",
+      "Damage": "120"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "748",
+      "Damage": "132"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "822",
+      "Damage": "145"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "904",
+      "Damage": "159"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "992",
+      "Damage": "175"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1088",
+      "Damage": "192"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1196",
+      "Damage": "211"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1312",
+      "Damage": "231"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1441",
+      "Damage": "254"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1584",
+      "Damage": "279"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1740",
+      "Damage": "307"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1910",
+      "Damage": "337"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "2101",
+      "Damage": "370"
+    }
+  ],
+  "executioner": [
+    {
+      "Level": 1,
+      "Hitpoints": "800",
+      "Damage": "106"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "880",
+      "Damage": "116"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "968",
+      "Damage": "128"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1064",
+      "Damage": "140"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1168",
+      "Damage": "154"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1280",
+      "Damage": "169"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1408",
+      "Damage": "186"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1544",
+      "Damage": "204"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1696",
+      "Damage": "224"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1864",
+      "Damage": "246"
+    }
+  ],
+  "fire-spirit": [
+    {
+      "Level": 1,
+      "Hitpoints": "90",
+      "Damage": "81"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "99",
+      "Damage": "89"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "108",
+      "Damage": "98"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "119",
+      "Damage": "107"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "131",
+      "Damage": "118"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "144",
+      "Damage": "129"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "158",
+      "Damage": "142"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "173",
+      "Damage": "156"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "190",
+      "Damage": "171"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "209",
+      "Damage": "188"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "230",
+      "Damage": "207"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "252",
+      "Damage": "227"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "278",
+      "Damage": "250"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "305",
+      "Damage": "274"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "334",
+      "Damage": "301"
+    }
+  ],
+  "fireball": [
+    {
+      "Level": 1,
+      "Hitpoints": "325",
+      "Damage": "98"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "357",
+      "Damage": "108"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "393",
+      "Damage": "118"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "432",
+      "Damage": "130"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "474",
+      "Damage": "143"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "520",
+      "Damage": "156"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "572",
+      "Damage": "172"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "627",
+      "Damage": "189"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "689",
+      "Damage": "207"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "757",
+      "Damage": "228"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "832",
+      "Damage": "250"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "913",
+      "Damage": "274"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1004",
+      "Damage": "302"
+    }
+  ],
+  "firecracker": null,
+  "firecracker?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "119",
+      "Damage": "125"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "130",
+      "Damage": "137"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "143",
+      "Damage": "151"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "158",
+      "Damage": "166"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "173",
+      "Damage": "182"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "190",
+      "Damage": "200"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "209",
+      "Damage": "220"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "229",
+      "Damage": "241"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "252",
+      "Damage": "265"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "277",
+      "Damage": "291"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "304",
+      "Damage": "320"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "334",
+      "Damage": "351"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "367",
+      "Damage": "386"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "403",
+      "Damage": "423"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "442",
+      "Damage": "465"
+    }
+  ],
+  "fisherman": null,
+  "flying-machine": [
+    {
+      "Level": 1,
+      "Hitpoints": "290",
+      "Damage": "81"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "319",
+      "Damage": "89"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "350",
+      "Damage": "98"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "385",
+      "Damage": "107"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "423",
+      "Damage": "118"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "464",
+      "Damage": "129"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "510",
+      "Damage": "142"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "559",
+      "Damage": "156"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "614",
+      "Damage": "171"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "675",
+      "Damage": "188"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "742",
+      "Damage": "207"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "814",
+      "Damage": "227"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "896",
+      "Damage": "250"
+    }
+  ],
+  "freeze": null,
+  "furnace": [
+    {
+      "Level": 1,
+      "Hitpoints": "400",
+      "Damage": "Level 3"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "440",
+      "Damage": "Level 4"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "484",
+      "Damage": "Level 5"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "532",
+      "Damage": "Level 6"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "584",
+      "Damage": "Level 7"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "640",
+      "Damage": "Level 8"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "704",
+      "Damage": "Level 9"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "772",
+      "Damage": "Level 10"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "848",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "932",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1024",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1124",
+      "Damage": "Level 14"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1236",
+      "Damage": "Level 15"
+    }
+  ],
+  "giant": [
+    {
+      "Level": 1,
+      "Hitpoints": "1930",
+      "Damage": "120"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "2123",
+      "Damage": "132"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "2335",
+      "Damage": "145"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "2566",
+      "Damage": "159"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "2817",
+      "Damage": "175"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "3088",
+      "Damage": "192"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "3396",
+      "Damage": "211"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "3724",
+      "Damage": "231"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "4091",
+      "Damage": "254"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "4496",
+      "Damage": "279"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "4940",
+      "Damage": "307"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "5423",
+      "Damage": "337"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "5963",
+      "Damage": "370"
+    }
+  ],
+  "giant-skeleton": [
+    {
+      "Level": 1,
+      "Hitpoints": "2260",
+      "Damage": "334"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "2486",
+      "Damage": "367"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "2734",
+      "Damage": "404"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "3005",
+      "Damage": "444"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "3299",
+      "Damage": "487"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "3616",
+      "Damage": "534"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "3977",
+      "Damage": "587"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "4361",
+      "Damage": "644"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "4791",
+      "Damage": "708"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "5265",
+      "Damage": "778"
+    }
+  ],
+  "giant-snowball": [
+    {
+      "Level": 1,
+      "Hitpoints": "70",
+      "Damage": "21"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "77",
+      "Damage": "24"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "84",
+      "Damage": "26"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "93",
+      "Damage": "28"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "102",
+      "Damage": "31"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "112",
+      "Damage": "34"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "123",
+      "Damage": "37"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "135",
+      "Damage": "41"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "148",
+      "Damage": "45"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "163",
+      "Damage": "49"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "179",
+      "Damage": "54"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "196",
+      "Damage": "59"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "216",
+      "Damage": "65"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "237",
+      "Damage": "72"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "260",
+      "Damage": "78"
+    }
+  ],
+  "giant-snowball?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "70",
+      "Damage": "21"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "77",
+      "Damage": "24"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "84",
+      "Damage": "26"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "93",
+      "Damage": "28"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "102",
+      "Damage": "31"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "112",
+      "Damage": "34"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "123",
+      "Damage": "37"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "135",
+      "Damage": "41"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "148",
+      "Damage": "45"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "163",
+      "Damage": "49"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "179",
+      "Damage": "54"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "196",
+      "Damage": "59"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "216",
+      "Damage": "65"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "237",
+      "Damage": "72"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "260",
+      "Damage": "78"
+    }
+  ],
+  "goblin-barrel": [
+    {
+      "Level": 1,
+      "Hitpoints": "6",
+      "Damage": "6"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "7",
+      "Damage": "7"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "8",
+      "Damage": "8"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "9",
+      "Damage": "9"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "10",
+      "Damage": "10"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "11",
+      "Damage": "11"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "12",
+      "Damage": "12"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "13",
+      "Damage": "13"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "14",
+      "Damage": "14"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "15",
+      "Damage": "15"
+    }
+  ],
+  "goblin-barrel?evolution=1": null,
+  "goblin-cage": [
+    {
+      "Level": 1,
+      "Hitpoints": "368",
+      "Damage": "368"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "404",
+      "Damage": "404"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "445",
+      "Damage": "445"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "489",
+      "Damage": "489"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "537",
+      "Damage": "537"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "588",
+      "Damage": "588"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "647",
+      "Damage": "647"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "710",
+      "Damage": "710"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "780",
+      "Damage": "780"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "857",
+      "Damage": "857"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "942",
+      "Damage": "942"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1034",
+      "Damage": "1034"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1137",
+      "Damage": "1137"
+    }
+  ],
+  "goblin-cage?evolution=1": null,
+  "goblin-curse": null,
+  "goblin-demolisher": null,
+  "goblin-drill": [
+    {
+      "Level": 1,
+      "Hitpoints": "900",
+      "Damage": "Level 6"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "990",
+      "Damage": "Level 7"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1089",
+      "Damage": "Level 8"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1197",
+      "Damage": "Level 9"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1314",
+      "Damage": "Level 10"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1440",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1584",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1737",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1908",
+      "Damage": "Level 14"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "2097",
+      "Damage": "Level 15"
+    }
+  ],
+  "goblin-drill?evolution=1": null,
+  "goblin-gang": null,
+  "goblin-giant": [
+    {
+      "Level": 1,
+      "Hitpoints": "2085",
+      "Damage": "Level 6"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "2293",
+      "Damage": "Level 7"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "2522",
+      "Damage": "Level 8"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "2773",
+      "Damage": "Level 9"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "3044",
+      "Damage": "Level 10"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "3336",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "3669",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "4024",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "4420",
+      "Damage": "Level 14"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "4858",
+      "Damage": "Level 15"
+    }
+  ],
+  "goblin-giant?evolution=1": null,
+  "goblin-hut": [
+    {
+      "Level": 1,
+      "Hitpoints": "400",
+      "Damage": "Level 3"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "440",
+      "Damage": "Level 4"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "484",
+      "Damage": "Level 5"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "532",
+      "Damage": "Level 6"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "584",
+      "Damage": "Level 7"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "640",
+      "Damage": "Level 8"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "704",
+      "Damage": "Level 9"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "772",
+      "Damage": "Level 10"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "848",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "932",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1024",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1124",
+      "Damage": "Level 14"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1236",
+      "Damage": "Level 15"
+    }
+  ],
+  "goblin-machine": [
+    {
+      "Level": 1,
+      "Hitpoints": "1905",
+      "Damage": "112"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "2095",
+      "Damage": "123"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "2305",
+      "Damage": "135"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "2533",
+      "Damage": "148"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "2781",
+      "Damage": "163"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "3048",
+      "Damage": "179"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "3352",
+      "Damage": "197"
+    }
+  ],
+  "goblins": [
+    {
+      "Level": 1,
+      "Hitpoints": "79",
+      "Damage": "47 ×4"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "86",
+      "Damage": "51 ×4"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "95",
+      "Damage": "56 ×4"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "105",
+      "Damage": "62 ×4"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "115",
+      "Damage": "68 ×4"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "126",
+      "Damage": "75 ×4"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "139",
+      "Damage": "82 ×4"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "152",
+      "Damage": "90 ×4"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "167",
+      "Damage": "99 ×4"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "184",
+      "Damage": "109 ×4"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "202",
+      "Damage": "120 ×4"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "221",
+      "Damage": "132 ×4"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "244",
+      "Damage": "145 ×4"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "267",
+      "Damage": "159 ×4"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "293",
+      "Damage": "174 ×4"
+    }
+  ],
+  "goblinstein": [
+    {
+      "Level": 1,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "",
+      "Damage": ""
+    }
+  ],
+  "golden-knight": [
+    {
+      "Level": 1,
+      "Hitpoints": "1800",
+      "Damage": "160"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1980",
+      "Damage": "176"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "2178",
+      "Damage": "193"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "2394",
+      "Damage": "212"
+    }
+  ],
+  "golem": [
+    {
+      "Level": 1,
+      "Hitpoints": "3200",
+      "Damage": "140"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "3520",
+      "Damage": "154"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "3872",
+      "Damage": "169"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "4256",
+      "Damage": "186"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "4672",
+      "Damage": "204"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "5120",
+      "Damage": "224"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "5632",
+      "Damage": "246"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "6176",
+      "Damage": "270"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "6784",
+      "Damage": "296"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "7456",
+      "Damage": "326"
+    }
+  ],
+  "graveyard": [
+    {
+      "Level": 1,
+      "Hitpoints": "9",
+      "Damage": "9"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "10",
+      "Damage": "10"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "11",
+      "Damage": "11"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "12",
+      "Damage": "12"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "13",
+      "Damage": "13"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "14",
+      "Damage": "14"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "15",
+      "Damage": "15"
+    }
+  ],
+  "guards": [
+    {
+      "Level": 1,
+      "Hitpoints": "160",
+      "Damage": "76 ×3"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "176",
+      "Damage": "83 ×3"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "193",
+      "Damage": "91 ×3"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "212",
+      "Damage": "101 ×3"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "233",
+      "Damage": "110 ×3"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "256",
+      "Damage": "121 ×3"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "281",
+      "Damage": "133 ×3"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "308",
+      "Damage": "146 ×3"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "339",
+      "Damage": "161 ×3"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "372",
+      "Damage": "177 ×3"
+    }
+  ],
+  "heal-spirit": [
+    {
+      "Level": 1,
+      "Hitpoints": "208",
+      "Damage": "52"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "228",
+      "Damage": "57"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "251",
+      "Damage": "62"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "276",
+      "Damage": "69"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "303",
+      "Damage": "75"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "332",
+      "Damage": "83"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "366",
+      "Damage": "91"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "401",
+      "Damage": "100"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "440",
+      "Damage": "110"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "484",
+      "Damage": "121"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "532",
+      "Damage": "133"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "584",
+      "Damage": "146"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "642",
+      "Damage": "160"
+    }
+  ],
+  "hog-rider": [
+    {
+      "Level": 1,
+      "Hitpoints": "800",
+      "Damage": "150"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "880",
+      "Damage": "165"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "968",
+      "Damage": "181"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1064",
+      "Damage": "199"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1168",
+      "Damage": "219"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1280",
+      "Damage": "240"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1408",
+      "Damage": "264"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1544",
+      "Damage": "289"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1696",
+      "Damage": "318"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1864",
+      "Damage": "349"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "2048",
+      "Damage": "384"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "2248",
+      "Damage": "421"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "2472",
+      "Damage": "463"
+    }
+  ],
+  "hunter": [
+    {
+      "Level": 1,
+      "Hitpoints": "553",
+      "Damage": "530"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "608",
+      "Damage": "583"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "669",
+      "Damage": "641"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "735",
+      "Damage": "704"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "807",
+      "Damage": "773"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "884",
+      "Damage": "848"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "973",
+      "Damage": "932"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1067",
+      "Damage": "1022"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1172",
+      "Damage": "1123"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1288",
+      "Damage": "1234"
+    }
+  ],
+  "hunter?evolution=1": null,
+  "ice-golem": null,
+  "ice-spirit": [
+    {
+      "Level": 1,
+      "Hitpoints": "90",
+      "Damage": "43"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "99",
+      "Damage": "47"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "108",
+      "Damage": "52"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "119",
+      "Damage": "57"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "131",
+      "Damage": "62"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "144",
+      "Damage": "68"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "158",
+      "Damage": "75"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "173",
+      "Damage": "82"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "190",
+      "Damage": "91"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "209",
+      "Damage": "100"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "230",
+      "Damage": "110"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "252",
+      "Damage": "120"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "278",
+      "Damage": "132"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "305",
+      "Damage": "145"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "334",
+      "Damage": "159"
+    }
+  ],
+  "ice-spirit?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "90",
+      "Damage": "43"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "99",
+      "Damage": "47"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "108",
+      "Damage": "52"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "119",
+      "Damage": "57"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "131",
+      "Damage": "62"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "144",
+      "Damage": "68"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "158",
+      "Damage": "75"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "173",
+      "Damage": "82"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "190",
+      "Damage": "91"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "209",
+      "Damage": "100"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "230",
+      "Damage": "110"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "252",
+      "Damage": "120"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "278",
+      "Damage": "132"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "305",
+      "Damage": "145"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "334",
+      "Damage": "159"
+    }
+  ],
+  "ice-wizard": [
+    {
+      "Level": 1,
+      "Hitpoints": "569",
+      "Damage": "75"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "625",
+      "Damage": "82"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "688",
+      "Damage": "90"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "756",
+      "Damage": "99"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "830",
+      "Damage": "109"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "910",
+      "Damage": "120"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1001",
+      "Damage": "132"
+    }
+  ],
+  "inferno-dragon": [
+    {
+      "Level": 1,
+      "Hitpoints": "1070",
+      "Damage": "30"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1177",
+      "Damage": "33"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1294",
+      "Damage": "36"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1423",
+      "Damage": "39"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1562",
+      "Damage": "43"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1712",
+      "Damage": "48"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1883",
+      "Damage": "52"
+    }
+  ],
+  "inferno-tower": [
+    {
+      "Level": 1,
+      "Hitpoints": "825",
+      "Damage": "20"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "907",
+      "Damage": "22"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "998",
+      "Damage": "24"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1097",
+      "Damage": "26"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1204",
+      "Damage": "29"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1320",
+      "Damage": "32"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1452",
+      "Damage": "35"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1592",
+      "Damage": "38"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1749",
+      "Damage": "42"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1922",
+      "Damage": "46"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "2112",
+      "Damage": "51"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "2318",
+      "Damage": "56"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "2549",
+      "Damage": "61"
+    }
+  ],
+  "knight": [
+    {
+      "Level": 1,
+      "Hitpoints": "690",
+      "Damage": "79"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "759",
+      "Damage": "86"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "834",
+      "Damage": "95"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "917",
+      "Damage": "105"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1007",
+      "Damage": "115"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1104",
+      "Damage": "126"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1214",
+      "Damage": "139"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1331",
+      "Damage": "152"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1462",
+      "Damage": "167"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1607",
+      "Damage": "184"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1766",
+      "Damage": "202"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1938",
+      "Damage": "221"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "2132",
+      "Damage": "244"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "2339",
+      "Damage": "267"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "2566",
+      "Damage": "293"
+    }
+  ],
+  "knight?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "690",
+      "Damage": "79"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "759",
+      "Damage": "86"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "834",
+      "Damage": "95"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "917",
+      "Damage": "105"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1007",
+      "Damage": "115"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1104",
+      "Damage": "126"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1214",
+      "Damage": "139"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1331",
+      "Damage": "152"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1462",
+      "Damage": "167"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1607",
+      "Damage": "184"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1766",
+      "Damage": "202"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1938",
+      "Damage": "221"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "2132",
+      "Damage": "244"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "2339",
+      "Damage": "267"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "2566",
+      "Damage": "293"
+    }
+  ],
+  "lava-hound": [
+    {
+      "Level": 1,
+      "Hitpoints": "2960",
+      "Damage": "45"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "3256",
+      "Damage": "49"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "3581",
+      "Damage": "54"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "3936",
+      "Damage": "59"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "4321",
+      "Damage": "65"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "4736",
+      "Damage": "72"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "5209",
+      "Damage": "79"
+    }
+  ],
+  "lightning": [
+    {
+      "Level": 1,
+      "Hitpoints": "660",
+      "Damage": "198"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "726",
+      "Damage": "218"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "798",
+      "Damage": "240"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "877",
+      "Damage": "264"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "963",
+      "Damage": "289"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1056",
+      "Damage": "317"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1161",
+      "Damage": "349"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1273",
+      "Damage": "382"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1399",
+      "Damage": "420"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1537",
+      "Damage": "462"
+    }
+  ],
+  "little-prince": [
+    {
+      "Level": 1,
+      "Hitpoints": "700",
+      "Damage": "100"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "770",
+      "Damage": "110"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "847",
+      "Damage": "121"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "931",
+      "Damage": "133"
+    }
+  ],
+  "lumberjack": [
+    {
+      "Level": 1,
+      "Hitpoints": "1060",
+      "Damage": "200"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1166",
+      "Damage": "220"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1282",
+      "Damage": "242"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1409",
+      "Damage": "266"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1547",
+      "Damage": "292"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1696",
+      "Damage": "320"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1865",
+      "Damage": "352"
+    }
+  ],
+  "lumberjack?evolution=1": null,
+  "magic-archer": null,
+  "mega-knight": [
+    {
+      "Level": 1,
+      "Hitpoints": "3300",
+      "Damage": "222"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "3630",
+      "Damage": "244"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "3993",
+      "Damage": "268"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "4389",
+      "Damage": "295"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "4818",
+      "Damage": "324"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "5280",
+      "Damage": "355"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "5808",
+      "Damage": "390"
+    }
+  ],
+  "mega-knight?evolution=1": null,
+  "mega-minion": [
+    {
+      "Level": 1,
+      "Hitpoints": "395",
+      "Damage": "147"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "434",
+      "Damage": "161"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "477",
+      "Damage": "177"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "525",
+      "Damage": "195"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "576",
+      "Damage": "214"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "632",
+      "Damage": "235"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "695",
+      "Damage": "258"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "762",
+      "Damage": "283"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "837",
+      "Damage": "311"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "920",
+      "Damage": "342"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1011",
+      "Damage": "376"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1109",
+      "Damage": "413"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1220",
+      "Damage": "454"
+    }
+  ],
+  "mighty-miner": [
+    {
+      "Level": 1,
+      "Hitpoints": "2250",
+      "Damage": "40"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "2475",
+      "Damage": "44"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "2722",
+      "Damage": "48"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "2992",
+      "Damage": "53"
+    }
+  ],
+  "miner": [
+    {
+      "Level": 1,
+      "Hitpoints": "1000",
+      "Damage": "40"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1100",
+      "Damage": "44"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1210",
+      "Damage": "49"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1330",
+      "Damage": "53"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1460",
+      "Damage": "59"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1600",
+      "Damage": "64"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1760",
+      "Damage": "71"
+    }
+  ],
+  "mini-pekka": [
+    {
+      "Level": 1,
+      "Hitpoints": "642",
+      "Damage": "340"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "706",
+      "Damage": "374"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "776",
+      "Damage": "411"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "853",
+      "Damage": "452"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "937",
+      "Damage": "496"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1027",
+      "Damage": "544"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1129",
+      "Damage": "598"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1239",
+      "Damage": "656"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1361",
+      "Damage": "720"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1495",
+      "Damage": "792"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1643",
+      "Damage": "870"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1804",
+      "Damage": "955"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1983",
+      "Damage": "1050"
+    }
+  ],
+  "minion-horde": null,
+  "minions": null,
+  "mirror": [
+    {
+      "Level": 1,
+      "Hitpoints": "7",
+      "Damage": "7"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "8",
+      "Damage": "8"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "9",
+      "Damage": "9"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "10",
+      "Damage": "10"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "11",
+      "Damage": "11"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "12",
+      "Damage": "12"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "13",
+      "Damage": "13"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "14",
+      "Damage": "14"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "15",
+      "Damage": "15"
+    }
+  ],
+  "monk": [
+    {
+      "Level": 1,
+      "Hitpoints": "2000",
+      "Damage": "140"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "2200",
+      "Damage": "154"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "2420",
+      "Damage": "169"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "2660",
+      "Damage": "186"
+    }
+  ],
+  "mortar": [
+    {
+      "Level": 1,
+      "Hitpoints": "535",
+      "Damage": "104"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "588",
+      "Damage": "114"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "647",
+      "Damage": "125"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "711",
+      "Damage": "138"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "781",
+      "Damage": "151"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "856",
+      "Damage": "166"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "941",
+      "Damage": "183"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1032",
+      "Damage": "200"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1134",
+      "Damage": "220"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1246",
+      "Damage": "242"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1369",
+      "Damage": "266"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1503",
+      "Damage": "292"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1653",
+      "Damage": "321"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "1813",
+      "Damage": "352"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "1990",
+      "Damage": "386"
+    }
+  ],
+  "mortar?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "535",
+      "Damage": "104"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "588",
+      "Damage": "114"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "647",
+      "Damage": "125"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "711",
+      "Damage": "138"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "781",
+      "Damage": "151"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "856",
+      "Damage": "166"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "941",
+      "Damage": "183"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1032",
+      "Damage": "200"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1134",
+      "Damage": "220"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1246",
+      "Damage": "242"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1369",
+      "Damage": "266"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1503",
+      "Damage": "292"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1653",
+      "Damage": "321"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "1813",
+      "Damage": "352"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "1990",
+      "Damage": "386"
+    }
+  ],
+  "mother-witch": null,
+  "musketeer": [
+    {
+      "Level": 1,
+      "Hitpoints": "340",
+      "Damage": "103"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "374",
+      "Damage": "113"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "411",
+      "Damage": "124"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "452",
+      "Damage": "136"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "496",
+      "Damage": "150"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "544",
+      "Damage": "164"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "598",
+      "Damage": "181"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "656",
+      "Damage": "198"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "720",
+      "Damage": "218"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "792",
+      "Damage": "239"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "870",
+      "Damage": "263"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "955",
+      "Damage": "289"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1050",
+      "Damage": "318"
+    }
+  ],
+  "musketeer?evolution=1": null,
+  "night-witch": [
+    {
+      "Level": 1,
+      "Hitpoints": "750",
+      "Damage": "Level 9"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "825",
+      "Damage": "Level 10"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "907",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "997",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1095",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1200",
+      "Damage": "Level 14"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1320",
+      "Damage": "Level 15"
+    }
+  ],
+  "pekka": [
+    {
+      "Level": 1,
+      "Hitpoints": "2350",
+      "Damage": "510"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "2585",
+      "Damage": "561"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "2843",
+      "Damage": "617"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "3125",
+      "Damage": "678"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "3431",
+      "Damage": "744"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "3760",
+      "Damage": "816"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "4136",
+      "Damage": "897"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "4535",
+      "Damage": "984"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "4982",
+      "Damage": "1081"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "5475",
+      "Damage": "1188"
+    }
+  ],
+  "pekka?evolution=1": null,
+  "phoenix": [
+    {
+      "Level": 1,
+      "Hitpoints": "870",
+      "Damage": "135"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "957",
+      "Damage": "148"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1052",
+      "Damage": "163"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1157",
+      "Damage": "179"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1270",
+      "Damage": "197"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1392",
+      "Damage": "216"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1531",
+      "Damage": "237"
+    }
+  ],
+  "poison": null,
+  "prince": null,
+  "princess": [
+    {
+      "Level": 1,
+      "Hitpoints": "216",
+      "Damage": "140"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "237",
+      "Damage": "154"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "261",
+      "Damage": "169"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "287",
+      "Damage": "186"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "315",
+      "Damage": "204"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "345",
+      "Damage": "224"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "380",
+      "Damage": "246"
+    }
+  ],
+  "rage": [
+    {
+      "Level": 1,
+      "Hitpoints": "120",
+      "Damage": "36"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "132",
+      "Damage": "40"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "145",
+      "Damage": "44"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "159",
+      "Damage": "48"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "175",
+      "Damage": "53"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "192",
+      "Damage": "58"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "211",
+      "Damage": "64"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "231",
+      "Damage": "70"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "254",
+      "Damage": "77"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "279",
+      "Damage": "84"
+    }
+  ],
+  "ram-rider": [
+    {
+      "Level": 1,
+      "Hitpoints": "1461",
+      "Damage": "220"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1607",
+      "Damage": "242"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1767",
+      "Damage": "266"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1943",
+      "Damage": "292"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "2133",
+      "Damage": "321"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "2337",
+      "Damage": "352"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "2571",
+      "Damage": "387"
+    }
+  ],
+  "rascals": [
+    {
+      "Level": 1,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "",
+      "Damage": ""
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "",
+      "Damage": ""
+    }
+  ],
+  "rocket": null,
+  "royal-delivery": [
+    {
+      "Level": 1,
+      "Hitpoints": "171",
+      "Damage": "Level 1"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "188",
+      "Damage": "Level 2"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "206",
+      "Damage": "Level 3"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "227",
+      "Damage": "Level 4"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "249",
+      "Damage": "Level 5"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "273",
+      "Damage": "Level 6"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "300",
+      "Damage": "Level 7"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "330",
+      "Damage": "Level 8"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "362",
+      "Damage": "Level 9"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "398",
+      "Damage": "Level 10"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "437",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "480",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "528",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "579",
+      "Damage": "Level 14"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "636",
+      "Damage": "Level 15"
+    }
+  ],
+  "royal-ghost": [
+    {
+      "Level": 1,
+      "Hitpoints": "1000",
+      "Damage": "216"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1100",
+      "Damage": "237"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1210",
+      "Damage": "261"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1330",
+      "Damage": "287"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1460",
+      "Damage": "315"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1600",
+      "Damage": "345"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1760",
+      "Damage": "380"
+    }
+  ],
+  "royal-giant": [
+    {
+      "Level": 1,
+      "Hitpoints": "1236",
+      "Damage": "120"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1359",
+      "Damage": "132"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1495",
+      "Damage": "145"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1643",
+      "Damage": "159"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1804",
+      "Damage": "175"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1977",
+      "Damage": "192"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "2175",
+      "Damage": "211"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "2385",
+      "Damage": "231"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "2620",
+      "Damage": "254"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "2879",
+      "Damage": "279"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "3164",
+      "Damage": "307"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "3473",
+      "Damage": "337"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "3819",
+      "Damage": "370"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "4190",
+      "Damage": "406"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "4597",
+      "Damage": "446"
+    }
+  ],
+  "royal-giant?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "1236",
+      "Damage": "120"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1359",
+      "Damage": "132"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1495",
+      "Damage": "145"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1643",
+      "Damage": "159"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1804",
+      "Damage": "175"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1977",
+      "Damage": "192"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "2175",
+      "Damage": "211"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "2385",
+      "Damage": "231"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "2620",
+      "Damage": "254"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "2879",
+      "Damage": "279"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "3164",
+      "Damage": "307"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "3473",
+      "Damage": "337"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "3819",
+      "Damage": "370"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "4190",
+      "Damage": "406"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "4597",
+      "Damage": "446"
+    }
+  ],
+  "royal-hogs": null,
+  "royal-recruits": null,
+  "royal-recruits?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "94",
+      "Damage": "52 ×6"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "103",
+      "Damage": "57 ×6"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "113",
+      "Damage": "62 ×6"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "125",
+      "Damage": "69 ×6"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "137",
+      "Damage": "75 ×6"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "150",
+      "Damage": "83 ×6"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "165",
+      "Damage": "91 ×6"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "181",
+      "Damage": "100 ×6"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "199",
+      "Damage": "110 ×6"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "219",
+      "Damage": "121 ×6"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "240",
+      "Damage": "133 ×6"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "264",
+      "Damage": "146 ×6"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "290",
+      "Damage": "160 ×6"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "318",
+      "Damage": "176 ×6"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "349",
+      "Damage": "193 ×6"
+    }
+  ],
+  "rune-giant": [
+    {
+      "Level": 1,
+      "Hitpoints": "1752",
+      "Damage": "75"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1927",
+      "Damage": "82"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "2119",
+      "Damage": "90"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "2330",
+      "Damage": "99"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "2557",
+      "Damage": "109"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "2803",
+      "Damage": "120"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "3083",
+      "Damage": "132"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "3381",
+      "Damage": "144"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "3714",
+      "Damage": "159"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "4082",
+      "Damage": "174"
+    }
+  ],
+  "skeleton-army": [
+    {
+      "Level": 1,
+      "Hitpoints": "51",
+      "Damage": "51 ×15"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "56",
+      "Damage": "56 ×15"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "61",
+      "Damage": "61 ×15"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "67",
+      "Damage": "67 ×15"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "74",
+      "Damage": "74 ×15"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "81",
+      "Damage": "81 ×15"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "89",
+      "Damage": "89 ×15"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "98",
+      "Damage": "98 ×15"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "108",
+      "Damage": "108 ×15"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "118",
+      "Damage": "118 ×15"
+    }
+  ],
+  "skeleton-barrel": [
+    {
+      "Level": 1,
+      "Hitpoints": "208",
+      "Damage": "Level 1"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "228",
+      "Damage": "Level 2"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "251",
+      "Damage": "Level 3"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "276",
+      "Damage": "Level 4"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "303",
+      "Damage": "Level 5"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "332",
+      "Damage": "Level 6"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "366",
+      "Damage": "Level 7"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "401",
+      "Damage": "Level 8"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "440",
+      "Damage": "Level 9"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "484",
+      "Damage": "Level 10"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "532",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "584",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "642",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "705",
+      "Damage": "Level 14"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "773",
+      "Damage": "Level 15"
+    }
+  ],
+  "skeleton-dragons": null,
+  "skeleton-king": [
+    {
+      "Level": 1,
+      "Hitpoints": "2300",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "2530",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "2783",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "3059",
+      "Damage": "Level 14"
+    }
+  ],
+  "skeletons": [
+    {
+      "Level": 1,
+      "Hitpoints": "32",
+      "Damage": "32 ×3"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "35",
+      "Damage": "35 ×3"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "38",
+      "Damage": "38 ×3"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "42",
+      "Damage": "42 ×3"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "46",
+      "Damage": "46 ×3"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "51",
+      "Damage": "51 ×3"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "56",
+      "Damage": "56 ×3"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "61",
+      "Damage": "61 ×3"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "67",
+      "Damage": "67 ×3"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "74",
+      "Damage": "74 ×3"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "81",
+      "Damage": "81 ×3"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "89",
+      "Damage": "89 ×3"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "98",
+      "Damage": "98 ×3"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "108",
+      "Damage": "108 ×3"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "119",
+      "Damage": "119 ×3"
+    }
+  ],
+  "skeletons?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "32",
+      "Damage": "32 ×3"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "35",
+      "Damage": "35 ×3"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "38",
+      "Damage": "38 ×3"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "42",
+      "Damage": "42 ×3"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "46",
+      "Damage": "46 ×3"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "51",
+      "Damage": "51 ×3"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "56",
+      "Damage": "56 ×3"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "61",
+      "Damage": "61 ×3"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "67",
+      "Damage": "67 ×3"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "74",
+      "Damage": "74 ×3"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "81",
+      "Damage": "81 ×3"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "89",
+      "Damage": "89 ×3"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "98",
+      "Damage": "98 ×3"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "108",
+      "Damage": "108 ×3"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "119",
+      "Damage": "119 ×3"
+    }
+  ],
+  "sparky": [
+    {
+      "Level": 1,
+      "Hitpoints": "1200",
+      "Damage": "1100"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1320",
+      "Damage": "1210"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1452",
+      "Damage": "1331"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1596",
+      "Damage": "1463"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1752",
+      "Damage": "1606"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1920",
+      "Damage": "1760"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "2112",
+      "Damage": "1936"
+    }
+  ],
+  "spear-goblins": [
+    {
+      "Level": 1,
+      "Hitpoints": "52",
+      "Damage": "32 ×3"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "57",
+      "Damage": "35 ×3"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "62",
+      "Damage": "38 ×3"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "69",
+      "Damage": "42 ×3"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "75",
+      "Damage": "46 ×3"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "83",
+      "Damage": "51 ×3"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "91",
+      "Damage": "56 ×3"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "100",
+      "Damage": "61 ×3"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "110",
+      "Damage": "67 ×3"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "121",
+      "Damage": "74 ×3"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "133",
+      "Damage": "81 ×3"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "146",
+      "Damage": "89 ×3"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "160",
+      "Damage": "98 ×3"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "176",
+      "Damage": "108 ×3"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "193",
+      "Damage": "119 ×3"
+    }
+  ],
+  "suspicious-bush": [
+    {
+      "Level": 1,
+      "Hitpoints": "38",
+      "Damage": "38"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "41",
+      "Damage": "41"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "45",
+      "Damage": "45"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "50",
+      "Damage": "50"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "55",
+      "Damage": "55"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "60",
+      "Damage": "60"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "66",
+      "Damage": "66"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "73",
+      "Damage": "73"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "80",
+      "Damage": "80"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "88",
+      "Damage": "88"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "97",
+      "Damage": "97"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "106",
+      "Damage": "106"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "117",
+      "Damage": "117"
+    }
+  ],
+  "tesla": [
+    {
+      "Level": 1,
+      "Hitpoints": "450",
+      "Damage": "86"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "495",
+      "Damage": "94"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "544",
+      "Damage": "104"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "598",
+      "Damage": "114"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "657",
+      "Damage": "125"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "720",
+      "Damage": "137"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "792",
+      "Damage": "151"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "868",
+      "Damage": "165"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "954",
+      "Damage": "182"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1048",
+      "Damage": "200"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1152",
+      "Damage": "220"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1264",
+      "Damage": "241"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1390",
+      "Damage": "265"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "1525",
+      "Damage": "291"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "1674",
+      "Damage": "319"
+    }
+  ],
+  "tesla?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "450",
+      "Damage": "86"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "495",
+      "Damage": "94"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "544",
+      "Damage": "104"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "598",
+      "Damage": "114"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "657",
+      "Damage": "125"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "720",
+      "Damage": "137"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "792",
+      "Damage": "151"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "868",
+      "Damage": "165"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "954",
+      "Damage": "182"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1048",
+      "Damage": "200"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "1152",
+      "Damage": "220"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1264",
+      "Damage": "241"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1390",
+      "Damage": "265"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "1525",
+      "Damage": "291"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "1674",
+      "Damage": "319"
+    }
+  ],
+  "the-log": [
+    {
+      "Level": 1,
+      "Hitpoints": "240",
+      "Damage": "48"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "264",
+      "Damage": "53"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "290",
+      "Damage": "58"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "319",
+      "Damage": "64"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "350",
+      "Damage": "70"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "384",
+      "Damage": "77"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "422",
+      "Damage": "85"
+    }
+  ],
+  "three-musketeers": [
+    {
+      "Level": 1,
+      "Hitpoints": "340",
+      "Damage": "103 ×3"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "374",
+      "Damage": "113 ×3"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "411",
+      "Damage": "124 ×3"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "452",
+      "Damage": "136 ×3"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "496",
+      "Damage": "150 ×3"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "544",
+      "Damage": "164 ×3"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "598",
+      "Damage": "181 ×3"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "656",
+      "Damage": "198 ×3"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "720",
+      "Damage": "218 ×3"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "792",
+      "Damage": "239 ×3"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "870",
+      "Damage": "263 ×3"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "955",
+      "Damage": "289 ×3"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1050",
+      "Damage": "318 ×3"
+    }
+  ],
+  "tombstone": [
+    {
+      "Level": 1,
+      "Hitpoints": "250",
+      "Damage": "Level 3"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "275",
+      "Damage": "Level 4"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "302",
+      "Damage": "Level 5"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "332",
+      "Damage": "Level 6"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "365",
+      "Damage": "Level 7"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "400",
+      "Damage": "Level 8"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "440",
+      "Damage": "Level 9"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "482",
+      "Damage": "Level 10"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "530",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "582",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "640",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "702",
+      "Damage": "Level 14"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "772",
+      "Damage": "Level 15"
+    }
+  ],
+  "tornado": [
+    {
+      "Level": 1,
+      "Hitpoints": "106",
+      "Damage": "38"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "116",
+      "Damage": "40"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "128",
+      "Damage": "44"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "140",
+      "Damage": "48"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "154",
+      "Damage": "54"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "169",
+      "Damage": "58"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "186",
+      "Damage": "64"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "204",
+      "Damage": "70"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "224",
+      "Damage": "78"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "246",
+      "Damage": "84"
+    }
+  ],
+  "valkyrie": null,
+  "valkyrie?evolution=1": null,
+  "void": null,
+  "wall-breakers": [
+    {
+      "Level": 1,
+      "Hitpoints": "207",
+      "Damage": "245 ×2"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "227",
+      "Damage": "269 ×2"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "250",
+      "Damage": "296 ×2"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "275",
+      "Damage": "325 ×2"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "302",
+      "Damage": "357 ×2"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "331",
+      "Damage": "392 ×2"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "364",
+      "Damage": "431 ×2"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "399",
+      "Damage": "472 ×2"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "438",
+      "Damage": "519 ×2"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "482",
+      "Damage": "570 ×2"
+    }
+  ],
+  "wall-breakers?evolution=1": null,
+  "witch": [
+    {
+      "Level": 1,
+      "Hitpoints": "524",
+      "Damage": "Level 6"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "576",
+      "Damage": "Level 7"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "634",
+      "Damage": "Level 8"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "696",
+      "Damage": "Level 9"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "765",
+      "Damage": "Level 10"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "838",
+      "Damage": "Level 11"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "922",
+      "Damage": "Level 12"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1011",
+      "Damage": "Level 13"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "1110",
+      "Damage": "Level 14"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "1220",
+      "Damage": "Level 15"
+    }
+  ],
+  "wizard": [
+    {
+      "Level": 1,
+      "Hitpoints": "356",
+      "Damage": "133"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "391",
+      "Damage": "146"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "430",
+      "Damage": "160"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "473",
+      "Damage": "176"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "519",
+      "Damage": "194"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "569",
+      "Damage": "212"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "626",
+      "Damage": "234"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "687",
+      "Damage": "256"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "754",
+      "Damage": "281"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "829",
+      "Damage": "309"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "911",
+      "Damage": "340"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "1000",
+      "Damage": "373"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "1100",
+      "Damage": "410"
+    }
+  ],
+  "wizard?evolution=1": null,
+  "x-bow": [
+    {
+      "Level": 1,
+      "Hitpoints": "1000",
+      "Damage": "26"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "1100",
+      "Damage": "28"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "1210",
+      "Damage": "31"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "1330",
+      "Damage": "34"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "1460",
+      "Damage": "37"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "1600",
+      "Damage": "41"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "1760",
+      "Damage": "45"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "1930",
+      "Damage": "50"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "2120",
+      "Damage": "55"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "2330",
+      "Damage": "60"
+    }
+  ],
+  "zap": [
+    {
+      "Level": 1,
+      "Hitpoints": "75",
+      "Damage": "23"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "82",
+      "Damage": "25"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "90",
+      "Damage": "27"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "99",
+      "Damage": "30"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "109",
+      "Damage": "33"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "120",
+      "Damage": "36"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "132",
+      "Damage": "40"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "144",
+      "Damage": "44"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "159",
+      "Damage": "48"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "174",
+      "Damage": "53"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "192",
+      "Damage": "58"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "210",
+      "Damage": "63"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "231",
+      "Damage": "70"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "254",
+      "Damage": "77"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "279",
+      "Damage": "84"
+    }
+  ],
+  "zap?evolution=1": [
+    {
+      "Level": 1,
+      "Hitpoints": "75",
+      "Damage": "23"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "82",
+      "Damage": "25"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "90",
+      "Damage": "27"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "99",
+      "Damage": "30"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "109",
+      "Damage": "33"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "120",
+      "Damage": "36"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "132",
+      "Damage": "40"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "144",
+      "Damage": "44"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "159",
+      "Damage": "48"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "174",
+      "Damage": "53"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "192",
+      "Damage": "58"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "210",
+      "Damage": "63"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "231",
+      "Damage": "70"
+    },
+    {
+      "Level": 14,
+      "Hitpoints": "254",
+      "Damage": "77"
+    },
+    {
+      "Level": 15,
+      "Hitpoints": "279",
+      "Damage": "84"
+    }
+  ],
+  "zappies": [
+    {
+      "Level": 1,
+      "Hitpoints": "250",
+      "Damage": "55 ×3"
+    },
+    {
+      "Level": 2,
+      "Hitpoints": "275",
+      "Damage": "60 ×3"
+    },
+    {
+      "Level": 3,
+      "Hitpoints": "302",
+      "Damage": "66 ×3"
+    },
+    {
+      "Level": 4,
+      "Hitpoints": "332",
+      "Damage": "73 ×3"
+    },
+    {
+      "Level": 5,
+      "Hitpoints": "365",
+      "Damage": "80 ×3"
+    },
+    {
+      "Level": 6,
+      "Hitpoints": "400",
+      "Damage": "88 ×3"
+    },
+    {
+      "Level": 7,
+      "Hitpoints": "440",
+      "Damage": "96 ×3"
+    },
+    {
+      "Level": 8,
+      "Hitpoints": "482",
+      "Damage": "106 ×3"
+    },
+    {
+      "Level": 9,
+      "Hitpoints": "530",
+      "Damage": "116 ×3"
+    },
+    {
+      "Level": 10,
+      "Hitpoints": "582",
+      "Damage": "128 ×3"
+    },
+    {
+      "Level": 11,
+      "Hitpoints": "640",
+      "Damage": "140 ×3"
+    },
+    {
+      "Level": 12,
+      "Hitpoints": "702",
+      "Damage": "154 ×3"
+    },
+    {
+      "Level": 13,
+      "Hitpoints": "772",
+      "Damage": "169 ×3"
+    }
+  ]
+}
