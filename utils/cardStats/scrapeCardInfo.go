@@ -1,18 +1,22 @@
 package cardStats
 
+// IMPORTS
 import (
 	"fmt"
+	"strings"
 
 	"github.com/gocolly/colly"
 )
 
+// VARIABLES
+var urlPrefix string = "https://www.deckshop.pro"
+
+// STRUCTS
 type CardInfo struct {
-	Level     int
+	Level     string
 	Hitpoints string
 	Damage    string
 }
-
-var urlPrefix string = "https://www.deckshop.pro"
 
 func GetCardInfo(cardName string) []CardInfo {
 	// VARIABLES
@@ -52,10 +56,14 @@ func GetCardInfo(cardName string) []CardInfo {
 	// TODO: incorporate this function into scrapeCardList.go
 	c.OnHTML(statTable, func(e *colly.HTMLElement) {
 		e.ForEach("tbody:first-of-type tr", func(index int, row *colly.HTMLElement) {
-			// TODO: Some cards start at weird levels. EX: archer-queen
-			level := index + 1
+			// Extracts values from table
+			// (isolates level number string for each level, but done like this to
+			// remove excess formatting/text from level 15 strings, which are weird)
+			level := strings.TrimSpace(row.DOM.Find("th:first-of-type").Children().Remove().End().Text())
 			hitpoints := row.ChildText("td:first-of-type")
 			damage := row.ChildText("td:last-of-type")
+
+			// Appends values to cardInfo struct
 			cardInfo = append(cardInfo, CardInfo{
 				Level:     level,
 				Hitpoints: hitpoints,
