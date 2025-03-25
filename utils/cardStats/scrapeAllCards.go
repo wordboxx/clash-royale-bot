@@ -58,7 +58,7 @@ func ScrapeAllCards() map[string]interface{} {
 			cardName := strings.TrimPrefix(href, "/card/detail/")
 
 			// Extract card's stats
-			cardNames[cardName] = GetCardInfo(cardName)
+			cardNames[cardName] = GetCardInfo(cardName, c)
 
 			// Sleep for 1 second to avoid getting blocked
 			time.Sleep(1 * time.Second)
