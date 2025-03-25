@@ -53,7 +53,6 @@ func GetCardInfo(cardName string) []CardInfo {
 
 	// --- Iterates through each row of the table and collects the card stats
 	// --- for each level
-	// TODO: incorporate this function into scrapeCardList.go
 	c.OnHTML(statTable, func(e *colly.HTMLElement) {
 		e.ForEach("tbody:first-of-type tr", func(index int, row *colly.HTMLElement) {
 			// Extracts values from table
