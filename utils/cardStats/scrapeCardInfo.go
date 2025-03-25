@@ -18,7 +18,7 @@ type CardInfo struct {
 	Damage    string
 }
 
-func GetCardInfo(cardName string) []CardInfo {
+func GetCardInfo(cardName string, c *colly.Collector) []CardInfo {
 	// VARIABLES
 	// --- URLs
 	var cardUrl string = urlPrefix + "/card/detail/" + cardName
@@ -26,12 +26,6 @@ func GetCardInfo(cardName string) []CardInfo {
 	var cardInfo []CardInfo
 
 	// BEFORE, AFTER, AND ERROR FUNCTIONS
-	// --- Creates a new collector
-	c := colly.NewCollector(
-		colly.UserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"),
-		colly.AllowURLRevisit(),
-	)
-
 	// --- Before making a request
 	c.OnRequest(func(r *colly.Request) {
 		fmt.Println("Visiting:", r.URL)
@@ -63,6 +57,7 @@ func GetCardInfo(cardName string) []CardInfo {
 			damage := row.ChildText("td:last-of-type")
 
 			// Appends values to cardInfo struct
+			// TODO: get all different stats and types, like air/ground, etc.
 			cardInfo = append(cardInfo, CardInfo{
 				Level:     level,
 				Hitpoints: hitpoints,
