@@ -1,9 +1,8 @@
 package main
 
-import (
-	cardStats "clash-royale-bot/utils/cardStats"
-)
+// import (
+// 	// cardStats "clash-royale-bot/utils/cardStats"
+// )
 
 func main() {
-	cardStats.MakeCardListJson(cardStats.ScrapeAllCards())
 }
