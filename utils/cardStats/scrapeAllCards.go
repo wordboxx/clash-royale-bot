@@ -13,7 +13,7 @@ import (
 var link string = "https://www.deckshop.pro/card/list"
 
 // FUNCTIONS
-func ScrapeAllCards() map[string]interface{} {
+func ScrapeAllCards() {
 	/*
 	* This function finds the links to the card details page
 	* and extracts the card name from the URL.
@@ -53,8 +53,9 @@ func ScrapeAllCards() map[string]interface{} {
 		// Select link
 		href := e.Attr("href")
 
-		// Isolate card name from end of link
+		// If link is to card details page
 		if strings.HasPrefix(href, "/card/detail/") {
+			// Isolate card name from end of link
 			cardName := strings.TrimPrefix(href, "/card/detail/")
 
 			// Extract card's stats
@@ -67,5 +68,4 @@ func ScrapeAllCards() map[string]interface{} {
 
 	// GOES TO LINK TO START SCRAPING
 	c.Visit(link)
-	return cardNames
 }
