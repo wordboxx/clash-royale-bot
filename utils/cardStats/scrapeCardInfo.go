@@ -18,10 +18,33 @@ type CardInfo struct {
 	Damage    string
 }
 
+func GetCardImageURL(cardURL string, c *colly.Collector) string {
+	// VARIABLES
+	var pathToImage string = "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3 > div > div:nth-child(1) > div.flex.items-center.gap-3 > img"
+	var imageSrc string
+
+	c.OnRequest(func(r *colly.Request) {
+		fmt.Println("Visitinggg:", r.URL)
+	})
+
+	c.OnError(func(r *colly.Response, err error) {
+		fmt.Println("Something went wrong:", err)
+	})
+
+	c.OnHTML(pathToImage, func(e *colly.HTMLElement) {
+		imageSrc = e.Attr("src")
+		fmt.Println("Image source:", imageSrc)
+	})
+
+	c.Visit(cardURL)
+	return imageSrc
+}
+
 func GetCardInfo(cardName string, c *colly.Collector) []CardInfo {
 	// VARIABLES
 	// --- URLs
 	var cardUrl string = urlPrefix + "/card/detail/" + cardName
+
 	// --- CardInfo object to store card stats
 	var cardInfo []CardInfo
 
@@ -48,6 +71,10 @@ func GetCardInfo(cardName string, c *colly.Collector) []CardInfo {
 	// --- Iterates through each row of the table and collects the card stats
 	// --- for each level
 	c.OnHTML(statTable, func(e *colly.HTMLElement) {
+		// Get card image URL
+		GetCardImageURL(cardUrl, c)
+
+		// Loops through each row of the table
 		e.ForEach("tbody:first-of-type tr", func(index int, row *colly.HTMLElement) {
 			// Extracts values from table
 			// (isolates level number string for each level, but done like this to
