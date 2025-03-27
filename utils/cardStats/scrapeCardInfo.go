@@ -3,6 +3,9 @@ package cardStats
 // IMPORTS
 import (
 	"fmt"
+	"io"
+	"net/http"
+	"os"
 	"strings"
 
 	"github.com/gocolly/colly"
@@ -16,6 +19,40 @@ type CardInfo struct {
 	Level     string
 	Hitpoints string
 	Damage    string
+}
+
+// FUNCTIONS
+func DownloadCardImage(cardImageURL string, cardName string) {
+	// Send GET request to image URL
+	response, err := http.Get(cardImageURL)
+	if err != nil {
+		fmt.Println("Error while downloading card image:", err)
+		return
+	}
+	defer response.Body.Close()
+
+	// Response check
+	if response.StatusCode != http.StatusOK {
+		fmt.Println("Failed to download image:", response.StatusCode)
+		return
+	}
+
+	// Create file to store image
+	file, err := os.Create(cardName + ".png")
+	if err != nil {
+		fmt.Println("Error while creating image file:", err)
+		return
+	}
+	defer file.Close()
+
+	// Copy image to file
+	_, err = io.Copy(file, response.Body)
+	if err != nil {
+		fmt.Println("Error while copying image to file:", err)
+		return
+	}
+	fmt.Println("Image downloaded successfully:", cardName+".png")
+
 }
 
 func GetCardImageURL(cardURL string, c *colly.Collector) string {
@@ -32,7 +69,7 @@ func GetCardImageURL(cardURL string, c *colly.Collector) string {
 	})
 
 	c.OnHTML(pathToImage, func(e *colly.HTMLElement) {
-		imageSrc = e.Attr("src")
+		imageSrc = urlPrefix + e.Attr("src")
 		fmt.Println("Image source:", imageSrc)
 	})
 
@@ -40,7 +77,7 @@ func GetCardImageURL(cardURL string, c *colly.Collector) string {
 	return imageSrc
 }
 
-func GetCardInfo(cardName string, c *colly.Collector) []CardInfo {
+func GetCardInfo(cardName string, c *colly.Collector) {
 	// VARIABLES
 	// --- URLs
 	var cardUrl string = urlPrefix + "/card/detail/" + cardName
@@ -71,9 +108,6 @@ func GetCardInfo(cardName string, c *colly.Collector) []CardInfo {
 	// --- Iterates through each row of the table and collects the card stats
 	// --- for each level
 	c.OnHTML(statTable, func(e *colly.HTMLElement) {
-		// Get card image URL
-		GetCardImageURL(cardUrl, c)
-
 		// Loops through each row of the table
 		e.ForEach("tbody:first-of-type tr", func(index int, row *colly.HTMLElement) {
 			// Extracts values from table
@@ -93,7 +127,9 @@ func GetCardInfo(cardName string, c *colly.Collector) []CardInfo {
 		})
 	})
 
-	// --- Starts the scrape and returns the card info
+	// --- Starts the scrape, downloads the card's image, then returns the card's info
+	// TODO: call WriteToJson in this function, do not export the card info struct
 	c.Visit(cardUrl)
-	return cardInfo
+	DownloadCardImage(GetCardImageURL(cardUrl, c), cardName)
+	MakeCardListJson(cardName, cardInfo)
 }
