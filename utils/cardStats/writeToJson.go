@@ -7,16 +7,16 @@ import (
 	"os"
 )
 
-// VARIABLES
-var cardListFilepath string = "data/cardList.json"
-
 // FUNCTIONS
-func MakeCardListJson(data map[string]interface{}) {
+func MakeCardListJson(cardName string, data []CardInfo) {
 	/*
 	* This function takes a map and writes it to a JSON file.
 	 */
 
+	var cardListFilepath string = "data/" + cardName + ".json"
+
 	// Creates the file and error check
+	// TODO: Makes file if not already existing
 	file, err := os.Create(cardListFilepath)
 	if err != nil {
 		fmt.Println("Error creating file:", err)
