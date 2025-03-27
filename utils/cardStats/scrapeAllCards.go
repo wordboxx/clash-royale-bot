@@ -20,17 +20,14 @@ func ScrapeAllCards() {
 	* It returns a list of card names.
 	 */
 
-	// VARIABLES
-	cardNames := make(map[string]interface{})
-
 	// FUNCTIONS
-	// INSTANTIATE DEFAULT COLLECTOR
+	// Instantiate collector
 	c := colly.NewCollector(
 		colly.UserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"),
 		colly.AllowURLRevisit(),
 	)
 
-	// BEFORE, AFTER, ON ERROR FUNCTIONS
+	// Before scrape, after scrape, and error handling
 	// --- Before making a request
 	c.OnRequest(func(r *colly.Request) {
 		fmt.Println("Visiting:", r.URL)
@@ -46,7 +43,7 @@ func ScrapeAllCards() {
 		fmt.Println("Finished scraping card names")
 	})
 
-	// SCRAPING FUNCTIONS
+	// Scraping functions
 	// --- Loops through all cards
 	var cardList string = "body > main > article > div:nth-child(2) > section:nth-child(2)"
 	c.OnHTML(cardList+" a[href]", func(e *colly.HTMLElement) {
@@ -58,8 +55,8 @@ func ScrapeAllCards() {
 			// Isolate card name from end of link
 			cardName := strings.TrimPrefix(href, "/card/detail/")
 
-			// Extract card's stats
-			cardNames[cardName] = GetCardInfo(cardName, c)
+			// TODO: Do all card manipulation here rather than exporting
+			GetCardInfo(cardName, c)
 
 			// Sleep for 1 second to avoid getting blocked
 			time.Sleep(1 * time.Second)
