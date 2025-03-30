@@ -38,7 +38,15 @@ func DownloadCardImage(cardImageURL string, cardName string) {
 	}
 
 	// Create file to store image
-	file, err := os.Create(cardName + ".png")
+	var cardImageDirectoryFilepath string = "data/images/cardImages/"
+	var cardImageFilepath string = cardImageDirectoryFilepath + cardName + ".png"
+
+	if err := os.MkdirAll(cardImageDirectoryFilepath, os.ModePerm); err != nil {
+		fmt.Println("Error while creating card image directory:", err)
+		return
+	}
+
+	file, err := os.Create(cardImageFilepath)
 	if err != nil {
 		fmt.Println("Error while creating image file:", err)
 		return
@@ -77,6 +85,28 @@ func GetCardImageURL(cardURL string, c *colly.Collector) string {
 	return imageSrc
 }
 
+func GetCardLevelStats(cardInfo []CardInfo, e *colly.HTMLElement) []CardInfo {
+	// Loops through each row of the table
+	e.ForEach("tbody:first-of-type tr", func(index int, row *colly.HTMLElement) {
+		// Extracts values from table
+		// (isolates level number string for each level, but done like this to
+		// remove excess formatting/text from level 15 strings, which are weird)
+		level := strings.TrimSpace(row.DOM.Find("th:first-of-type").Children().Remove().End().Text())
+		hitpoints := row.ChildText("td:first-of-type")
+		damage := row.ChildText("td:last-of-type")
+
+		// Appends values to cardInfo struct
+		// TODO: get all different stats and types, like air/ground, etc.
+		cardInfo = append(cardInfo, CardInfo{
+			Level:     level,
+			Hitpoints: hitpoints,
+			Damage:    damage,
+		})
+	})
+
+	return cardInfo
+}
+
 func GetCardInfo(cardName string, c *colly.Collector) {
 	// VARIABLES
 	// --- URLs
@@ -105,30 +135,18 @@ func GetCardInfo(cardName string, c *colly.Collector) {
 	// --- Selector for the card's stat table
 	statTable := "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:first-of-type"
 
-	// --- Iterates through each row of the table and collects the card stats
-	// --- for each level
+	// --- Adds card level stats to cardInfo
 	c.OnHTML(statTable, func(e *colly.HTMLElement) {
-		// Loops through each row of the table
-		e.ForEach("tbody:first-of-type tr", func(index int, row *colly.HTMLElement) {
-			// Extracts values from table
-			// (isolates level number string for each level, but done like this to
-			// remove excess formatting/text from level 15 strings, which are weird)
-			level := strings.TrimSpace(row.DOM.Find("th:first-of-type").Children().Remove().End().Text())
-			hitpoints := row.ChildText("td:first-of-type")
-			damage := row.ChildText("td:last-of-type")
+		cardInfo = GetCardLevelStats(cardInfo, e)
+	})
+	// --- Gets other card info
+	var cardOtherStats string = "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3"
+	c.OnHTML(cardOtherStats, func(e *colly.HTMLElement) {
+		// TODO: Get the rest of the card info
 
-			// Appends values to cardInfo struct
-			// TODO: get all different stats and types, like air/ground, etc.
-			cardInfo = append(cardInfo, CardInfo{
-				Level:     level,
-				Hitpoints: hitpoints,
-				Damage:    damage,
-			})
-		})
 	})
 
-	// --- Starts the scrape, downloads the card's image, then returns the card's info
-	// TODO: call WriteToJson in this function, do not export the card info struct
+	// --- Starts the scrape, downloads the card's image, then writes the card info to a JSON file
 	c.Visit(cardUrl)
 	DownloadCardImage(GetCardImageURL(cardUrl, c), cardName)
 	MakeCardListJson(cardName, cardInfo)
