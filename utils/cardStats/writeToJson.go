@@ -13,10 +13,17 @@ func MakeCardListJson(cardName string, data []CardInfo) {
 	* This function takes a map and writes it to a JSON file.
 	 */
 
-	var cardListFilepath string = "data/" + cardName + ".json"
+	var cardListDirectoryFilepath string = "data/cardStats/"
+	var cardListFilepath string = cardListDirectoryFilepath + cardName + ".json"
 
 	// Creates the file and error check
-	// TODO: Makes file if not already existing
+	// --- Creates the directory if it doesn't exist
+	if err := os.MkdirAll(cardListDirectoryFilepath, os.ModePerm); err != nil {
+		fmt.Println("Error while creating card info directory:", err)
+		return
+	}
+
+	// --- Creates the file
 	file, err := os.Create(cardListFilepath)
 	if err != nil {
 		fmt.Println("Error creating file:", err)
