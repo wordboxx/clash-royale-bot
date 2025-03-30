@@ -15,10 +15,18 @@ import (
 var urlPrefix string = "https://www.deckshop.pro"
 
 // STRUCTS
-type CardInfo struct {
+type CardLevelStats struct {
 	Level     string
 	Hitpoints string
 	Damage    string
+}
+
+type CardInfo struct {
+	LevelStats []CardLevelStats
+	Hitspeed   string
+	Speed      string
+	Count      string
+	Range      string
 }
 
 // FUNCTIONS
@@ -85,35 +93,27 @@ func GetCardImageURL(cardURL string, c *colly.Collector) string {
 	return imageSrc
 }
 
-func GetCardLevelStats(cardInfo []CardInfo, e *colly.HTMLElement) []CardInfo {
-	// Loops through each row of the table
+func GetCardLevelStats(levelStats []CardLevelStats, e *colly.HTMLElement) []CardLevelStats {
 	e.ForEach("tbody:first-of-type tr", func(index int, row *colly.HTMLElement) {
-		// Extracts values from table
-		// (isolates level number string for each level, but done like this to
-		// remove excess formatting/text from level 15 strings, which are weird)
 		level := strings.TrimSpace(row.DOM.Find("th:first-of-type").Children().Remove().End().Text())
 		hitpoints := row.ChildText("td:first-of-type")
 		damage := row.ChildText("td:last-of-type")
 
-		// Appends values to cardInfo struct
-		// TODO: get all different stats and types, like air/ground, etc.
-		cardInfo = append(cardInfo, CardInfo{
+		levelStats = append(levelStats, CardLevelStats{
 			Level:     level,
 			Hitpoints: hitpoints,
 			Damage:    damage,
 		})
 	})
-
-	return cardInfo
+	return levelStats
 }
 
 func GetCardInfo(cardName string, c *colly.Collector) {
+	var cardInfo CardInfo
+
 	// VARIABLES
 	// --- URLs
 	var cardUrl string = urlPrefix + "/card/detail/" + cardName
-
-	// --- CardInfo object to store card stats
-	var cardInfo []CardInfo
 
 	// BEFORE, AFTER, AND ERROR FUNCTIONS
 	// --- Before making a request
@@ -137,17 +137,29 @@ func GetCardInfo(cardName string, c *colly.Collector) {
 
 	// --- Adds card level stats to cardInfo
 	c.OnHTML(statTable, func(e *colly.HTMLElement) {
-		cardInfo = GetCardLevelStats(cardInfo, e)
+		cardInfo.LevelStats = GetCardLevelStats(cardInfo.LevelStats, e)
 	})
 	// --- Gets other card info
-	var cardOtherStats string = "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3"
+	var cardOtherStats string = "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3 > div > div:nth-child(2) > table > tbody"
 	c.OnHTML(cardOtherStats, func(e *colly.HTMLElement) {
-		// TODO: Get the rest of the card info
-
+		e.ForEach("tr", func(index int, row *colly.HTMLElement) {
+			statName := row.ChildText("th:first-of-type")
+			statValue := row.ChildText("td:last-of-type")
+			switch statName {
+			case "Hitspeed":
+				cardInfo.Hitspeed = statValue
+			case "Speed":
+				cardInfo.Speed = statValue
+			case "Count":
+				cardInfo.Count = statValue
+			case "Range":
+				cardInfo.Range = statValue
+			}
+		})
 	})
 
 	// --- Starts the scrape, downloads the card's image, then writes the card info to a JSON file
 	c.Visit(cardUrl)
 	DownloadCardImage(GetCardImageURL(cardUrl, c), cardName)
-	MakeCardListJson(cardName, cardInfo)
+	MakeCardListJson(cardName, []CardInfo{cardInfo})
 }
