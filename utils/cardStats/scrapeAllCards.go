@@ -55,7 +55,7 @@ func ScrapeAllCards() {
 			// Isolate card name from end of link
 			cardName := strings.TrimPrefix(href, "/card/detail/")
 
-			// TODO: Do all card manipulation here rather than exporting
+			// Get card info
 			GetCardInfo(cardName, c)
 
 			// Sleep for 1 second to avoid getting blocked
