@@ -6,7 +6,6 @@ import (
 	"io"
 	"net/http"
 	"os"
-	"strings"
 
 	"github.com/gocolly/colly"
 )
@@ -22,15 +21,37 @@ type CardLevelStats struct {
 }
 
 type CardInfo struct {
-	LevelStats []CardLevelStats
-	Hitspeed   string
-	Speed      string
-	Count      string
-	Range      string
+	LevelStats  []CardLevelStats
+	Hitspeed    string
+	Speed       string
+	Count       string
+	Range       string
+	SpellRadius string
+	Duration    string
+	TowerDamage string
 }
 
 // FUNCTIONS
-func DownloadCardImage(cardImageURL string, cardName string) {
+func DownloadCardImage(cardURL string, cardName string, c *colly.Collector) {
+	// Get image URL from card page
+	var pathToImage string = "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3 > div > div:nth-child(1) > div.flex.items-center.gap-3 > img"
+	var cardImageURL string
+
+	c.OnRequest(func(r *colly.Request) {
+		fmt.Println("Visitinggg:", r.URL)
+	})
+
+	c.OnError(func(r *colly.Response, err error) {
+		fmt.Println("Something went wrong:", err)
+	})
+
+	c.OnHTML(pathToImage, func(e *colly.HTMLElement) {
+		cardImageURL = urlPrefix + e.Attr("src")
+		fmt.Println("Image source:", cardImageURL)
+	})
+
+	c.Visit(cardURL)
+
 	// Send GET request to image URL
 	response, err := http.Get(cardImageURL)
 	if err != nil {
@@ -68,47 +89,9 @@ func DownloadCardImage(cardImageURL string, cardName string) {
 		return
 	}
 	fmt.Println("Image downloaded successfully:", cardName+".png")
-
 }
 
-func GetCardImageURL(cardURL string, c *colly.Collector) string {
-	// VARIABLES
-	var pathToImage string = "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3 > div > div:nth-child(1) > div.flex.items-center.gap-3 > img"
-	var imageSrc string
-
-	c.OnRequest(func(r *colly.Request) {
-		fmt.Println("Visitinggg:", r.URL)
-	})
-
-	c.OnError(func(r *colly.Response, err error) {
-		fmt.Println("Something went wrong:", err)
-	})
-
-	c.OnHTML(pathToImage, func(e *colly.HTMLElement) {
-		imageSrc = urlPrefix + e.Attr("src")
-		fmt.Println("Image source:", imageSrc)
-	})
-
-	c.Visit(cardURL)
-	return imageSrc
-}
-
-func GetCardLevelStats(levelStats []CardLevelStats, e *colly.HTMLElement) []CardLevelStats {
-	e.ForEach("tbody:first-of-type tr", func(index int, row *colly.HTMLElement) {
-		level := strings.TrimSpace(row.DOM.Find("th:first-of-type").Children().Remove().End().Text())
-		hitpoints := row.ChildText("td:first-of-type")
-		damage := row.ChildText("td:last-of-type")
-
-		levelStats = append(levelStats, CardLevelStats{
-			Level:     level,
-			Hitpoints: hitpoints,
-			Damage:    damage,
-		})
-	})
-	return levelStats
-}
-
-func GetCardInfo(cardName string, c *colly.Collector) {
+func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 	var cardInfo CardInfo
 
 	// VARIABLES
@@ -132,34 +115,9 @@ func GetCardInfo(cardName string, c *colly.Collector) {
 	})
 
 	// SCRAPING
-	// --- Selector for the card's stat table
-	statTable := "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:first-of-type"
+	//TODO: fix the scraping to get ALL stats correlating with stat names
 
-	// --- Adds card level stats to cardInfo
-	c.OnHTML(statTable, func(e *colly.HTMLElement) {
-		cardInfo.LevelStats = GetCardLevelStats(cardInfo.LevelStats, e)
-	})
-	// --- Gets other card info
-	var cardOtherStats string = "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3 > div > div:nth-child(2) > table > tbody"
-	c.OnHTML(cardOtherStats, func(e *colly.HTMLElement) {
-		e.ForEach("tr", func(index int, row *colly.HTMLElement) {
-			statName := row.ChildText("th:first-of-type")
-			statValue := row.ChildText("td:last-of-type")
-			switch statName {
-			case "Hitspeed":
-				cardInfo.Hitspeed = statValue
-			case "Speed":
-				cardInfo.Speed = statValue
-			case "Count":
-				cardInfo.Count = statValue
-			case "Range":
-				cardInfo.Range = statValue
-			}
-		})
-	})
-
-	// --- Starts the scrape, downloads the card's image, then writes the card info to a JSON file
+	// --- Visits the card URL and starts the scrape
 	c.Visit(cardUrl)
-	DownloadCardImage(GetCardImageURL(cardUrl, c), cardName)
-	MakeCardListJson(cardName, []CardInfo{cardInfo})
+	return cardInfo
 }
