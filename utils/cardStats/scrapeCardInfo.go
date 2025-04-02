@@ -34,7 +34,7 @@ type CardInfo struct {
 // FUNCTIONS
 func DownloadCardImage(cardURL string, cardName string, c *colly.Collector) {
 	// Get image URL from card page
-	var pathToImage string = "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3 > div > div:nth-child(1) > div.flex.items-center.gap-3 > img"
+	pathToImage := "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3 > div > div:nth-child(1) > div.flex.items-center.gap-3 > img"
 	var cardImageURL string
 
 	c.OnRequest(func(r *colly.Request) {
@@ -96,7 +96,7 @@ func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 
 	// VARIABLES
 	// --- URLs
-	var cardUrl string = urlPrefix + "/card/detail/" + cardName
+	cardUrl := urlPrefix + "/card/detail/" + cardName
 
 	// BEFORE, AFTER, AND ERROR FUNCTIONS
 	// --- Before making a request
@@ -115,7 +115,23 @@ func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 	})
 
 	// SCRAPING
-	//TODO: fix the scraping to get ALL stats correlating with stat names
+	// TODO: fix the scraping to get ALL stats correlating with stat names
+	// --- Get level stats (that increase with each level)
+	levelStatsTable := "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table"
+	c.OnHTML(levelStatsTable, func(e *colly.HTMLElement) {
+		var levelStatsHeaders []string
+		e.ForEach("tr:first-of-type > th", func(_ int, el *colly.HTMLElement) {
+			if el.DOM.Children().Length() > 0 {
+				levelStatsHeaders = append(levelStatsHeaders, el.DOM.Children().Text())
+			} else {
+				levelStatsHeaders = append(levelStatsHeaders, el.Text)
+			}
+		})
+	})
+
+	// TODO: get other stats like radius, range, etc., from other table
+	// otherStatsTable
+	// c.OnHTML()
 
 	// --- Visits the card URL and starts the scrape
 	c.Visit(cardUrl)
