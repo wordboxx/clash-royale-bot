@@ -6,6 +6,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"strings"
 
 	"github.com/gocolly/colly"
 )
@@ -93,6 +94,7 @@ func DownloadCardImage(cardURL string, cardName string, c *colly.Collector) {
 
 func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 	var cardInfo CardInfo
+	var statNames []string
 
 	// VARIABLES
 	// --- URLs
@@ -115,17 +117,35 @@ func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 	})
 
 	// SCRAPING
-	// TODO: fix the scraping to get ALL stats correlating with stat names
 	// --- Get level stats (that increase with each level)
 	levelStatsTable := "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table"
 	c.OnHTML(levelStatsTable, func(e *colly.HTMLElement) {
-		var levelStatsHeaders []string
-		e.ForEach("tr:first-of-type > th", func(_ int, el *colly.HTMLElement) {
+		// Get all stat names
+		e.ForEach("tr:not(tbody tr) > th", func(_ int, el *colly.HTMLElement) {
+			// Get first th or first child if it has children
+			var statName string
 			if el.DOM.Children().Length() > 0 {
-				levelStatsHeaders = append(levelStatsHeaders, el.DOM.Children().Text())
+				statName = strings.TrimSpace(el.DOM.Children().First().Text())
 			} else {
-				levelStatsHeaders = append(levelStatsHeaders, el.Text)
+				statName = strings.TrimSpace(el.Text)
 			}
+			statNames = append(statNames, statName)
+		})
+		fmt.Println(statNames)
+
+		// Get all stat values
+		// Get all stat values from tbody rows
+		e.ForEach("tbody tr", func(_ int, el *colly.HTMLElement) {
+			var values []string
+
+			el.ForEach("th", func(_ int, th *colly.HTMLElement) {
+				values = append(values, strings.TrimSpace(th.Text))
+			})
+
+			el.ForEach("td", func(_ int, td *colly.HTMLElement) {
+				values = append(values, strings.TrimSpace(td.Text))
+			})
+			// TODO: fix last tr entry (mirrored, level 15)
 		})
 	})
 
