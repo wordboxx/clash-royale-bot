@@ -117,22 +117,25 @@ func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 
 	// SCRAPING
 	// --- Get misc stats (that don't increase with each level)
-	// TODO: finish this
 	miscStatsTable := "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3 > div > div:nth-child(2) > table > tbody"
 	c.OnHTML(miscStatsTable, func(e *colly.HTMLElement) {
 		e.ForEach("tr", func(_ int, el *colly.HTMLElement) {
-			fmt.Println(strings.TrimSpace(el.Text))
+			el.ForEach("th", func(_ int, th *colly.HTMLElement) {
+				statName := strings.TrimSpace(th.Text)
+				statValue := strings.TrimSpace(el.ChildText("td"))
+				fmt.Println(statName, statValue)
+			})
 		})
 	})
 
 	// --- Get level stats (that increase with each level)
 	levelStatsTable := "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table"
+	// var levelStats []string
 	c.OnHTML(levelStatsTable, func(e *colly.HTMLElement) {
 
-		// Get all stat names
+		// Stat names
 		var statNames []string
 		e.ForEach("tr:not(tbody tr) > th", func(_ int, el *colly.HTMLElement) {
-			// Get first th or first child if it has children
 			var statName string
 			if el.DOM.Children().Length() > 0 {
 				statName = strings.TrimSpace(el.DOM.Children().First().Text())
@@ -142,8 +145,7 @@ func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 			statNames = append(statNames, statName)
 		})
 
-		// Get all stat values
-		// Get all stat values from tbody rows
+		// Stat values
 		var values []string
 		e.ForEach("tbody tr", func(_ int, el *colly.HTMLElement) {
 
@@ -156,6 +158,9 @@ func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 			})
 			// TODO: fix last tr entry (mirrored, level 15)
 		})
+
+		// DEBUG: Print all stat values
+
 	})
 
 	// --- Visits the card URL and starts the scrape
