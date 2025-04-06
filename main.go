@@ -8,5 +8,5 @@ func main() {
 
 	c := cardStats.NewCollector()
 
-	cardStats.GetCardInfo("poison", c)
+	cardStats.GetCardInfo("miner", c)
 }

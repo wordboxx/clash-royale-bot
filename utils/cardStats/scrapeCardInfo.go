@@ -118,21 +118,23 @@ func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 	// SCRAPING
 	// --- Get misc stats (that don't increase with each level)
 	miscStatsTable := "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3 > div > div:nth-child(2) > table > tbody"
+	var miscStats []string
 	c.OnHTML(miscStatsTable, func(e *colly.HTMLElement) {
 		e.ForEach("tr", func(_ int, el *colly.HTMLElement) {
 			el.ForEach("th", func(_ int, th *colly.HTMLElement) {
 				statName := strings.TrimSpace(th.Text)
 				statValue := strings.TrimSpace(el.ChildText("td"))
-				fmt.Println(statName, statValue)
+				miscStats = append(miscStats, statName)
+				miscStats = append(miscStats, statValue)
 			})
 		})
 	})
 
 	// --- Get level stats (that increase with each level)
+	// TODO: fix this
 	levelStatsTable := "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table"
-	// var levelStats []string
+	var levelStatsMap = make(map[string]map[string]string) // Map to store level stats
 	c.OnHTML(levelStatsTable, func(e *colly.HTMLElement) {
-
 		// Stat names
 		var statNames []string
 		e.ForEach("tr:not(tbody tr) > th", func(_ int, el *colly.HTMLElement) {
@@ -146,24 +148,34 @@ func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 		})
 
 		// Stat values
-		var values []string
 		e.ForEach("tbody tr", func(_ int, el *colly.HTMLElement) {
+			var level string
+			var stats = make(map[string]string)
 
+			// Extract level
 			el.ForEach("th", func(_ int, th *colly.HTMLElement) {
-				values = append(values, strings.TrimSpace(th.Text))
+				level = strings.TrimSpace(th.Text)
 			})
 
-			el.ForEach("td", func(_ int, td *colly.HTMLElement) {
-				values = append(values, strings.TrimSpace(td.Text))
+			// Extract stats
+			el.ForEach("td", func(i int, td *colly.HTMLElement) {
+				if i < len(statNames) {
+					stats[statNames[i]] = strings.TrimSpace(td.Text)
+				}
 			})
-			// TODO: fix last tr entry (mirrored, level 15)
+
+			// Add to levelStatsMap
+			if level != "" {
+				levelStatsMap[level] = stats
+			}
 		})
-
-		// DEBUG: Print all stat values
-
 	})
 
 	// --- Visits the card URL and starts the scrape
 	c.Visit(cardUrl)
+
+	// Debug: Print the collected level stats
+	fmt.Println("Collected Level Stats:", levelStatsMap)
+
 	return cardInfo
 }
