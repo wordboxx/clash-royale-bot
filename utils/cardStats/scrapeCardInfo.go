@@ -115,8 +115,6 @@ func getGeneralStats(c *colly.Collector, cardInfo *CardInfo) {
 					cardInfo.SpellRadius = statValue
 				case "Duration":
 					cardInfo.Duration = statValue
-				case "Tower damage":
-					cardInfo.TowerDamage = statValue
 				}
 			})
 		})
@@ -126,6 +124,7 @@ func getGeneralStats(c *colly.Collector, cardInfo *CardInfo) {
 func getLevelStats(c *colly.Collector, cardInfo *CardInfo) {
 	var levelStatsTable string = "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table"
 	c.OnHTML(levelStatsTable, func(e *colly.HTMLElement) {
+
 		// --- Get the stat names in the header row
 		var statNames []string
 		var levelStatsTableHeader string = "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table > thead > tr"
@@ -137,7 +136,10 @@ func getLevelStats(c *colly.Collector, cardInfo *CardInfo) {
 				} else {
 					statName = strings.TrimSpace(th.Text)
 				}
-				statNames = append(statNames, statName)
+				// Only append if it's not the "Level" column
+				if statName != "Level" {
+					statNames = append(statNames, statName)
+				}
 			})
 		})
 
@@ -161,6 +163,7 @@ func getLevelStats(c *colly.Collector, cardInfo *CardInfo) {
 					}
 				})
 
+				// Append the levelStat to the cardInfo
 				cardInfo.LevelStats = append(cardInfo.LevelStats, levelStat)
 			})
 		})
