@@ -4,7 +4,7 @@ go 1.24.1
 
 require github.com/gocolly/colly v1.2.0
 
-require golang.org/x/net v0.0.0-20200602114024-627f9648deb9 // indirect
+require golang.org/x/net v0.28.0 // indirect
 
 require (
 	github.com/PuerkitoBio/goquery v1.5.1 // indirect
@@ -38,6 +38,7 @@ require (
 	github.com/temoto/robotstxt v1.1.1 // indirect
 	github.com/tklauser/go-sysconf v0.3.14 // indirect
 	github.com/tklauser/numcpus v0.9.0 // indirect
+	github.com/vcaesar/bitmap v0.12.0 // indirect
 	github.com/vcaesar/gops v0.40.0 // indirect
 	github.com/vcaesar/imgo v0.40.2 // indirect
 	github.com/vcaesar/keycode v0.10.1 // indirect
