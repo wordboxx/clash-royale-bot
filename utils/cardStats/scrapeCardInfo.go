@@ -94,6 +94,8 @@ func DownloadCardImage(cardURL string, cardName string, c *colly.Collector) {
 
 func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 	var cardInfo CardInfo
+	var miscStats = make(map[string]string)
+	var levelStats = make(map[string]string)
 
 	// VARIABLES
 	// --- URLs
@@ -117,65 +119,40 @@ func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 
 	// SCRAPING
 	// --- Get misc stats (that don't increase with each level)
-	miscStatsTable := "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3 > div > div:nth-child(2) > table > tbody"
-	var miscStats []string
+	var miscStatsTable string = "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3 > div > div:nth-child(2) > table > tbody"
 	c.OnHTML(miscStatsTable, func(e *colly.HTMLElement) {
 		e.ForEach("tr", func(_ int, el *colly.HTMLElement) {
 			el.ForEach("th", func(_ int, th *colly.HTMLElement) {
 				statName := strings.TrimSpace(th.Text)
 				statValue := strings.TrimSpace(el.ChildText("td"))
-				miscStats = append(miscStats, statName)
-				miscStats = append(miscStats, statValue)
+				miscStats[statName] = statValue
 			})
 		})
 	})
 
 	// --- Get level stats (that increase with each level)
-	// TODO: fix this
-	levelStatsTable := "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table"
-	var levelStatsMap = make(map[string]map[string]string) // Map to store level stats
+	var levelStatsTable string = "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table"
 	c.OnHTML(levelStatsTable, func(e *colly.HTMLElement) {
-		// Stat names
-		var statNames []string
-		e.ForEach("tr:not(tbody tr) > th", func(_ int, el *colly.HTMLElement) {
-			var statName string
-			if el.DOM.Children().Length() > 0 {
-				statName = strings.TrimSpace(el.DOM.Children().First().Text())
-			} else {
-				statName = strings.TrimSpace(el.Text)
-			}
-			statNames = append(statNames, statName)
-		})
-
-		// Stat values
-		e.ForEach("tbody tr", func(_ int, el *colly.HTMLElement) {
-			var level string
-			var stats = make(map[string]string)
-
-			// Extract level
+		// --- Get the stat names in the header row
+		var levelStatsTableHeader string = "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table > thead > tr"
+		e.ForEach(levelStatsTableHeader, func(_ int, el *colly.HTMLElement) {
 			el.ForEach("th", func(_ int, th *colly.HTMLElement) {
-				level = strings.TrimSpace(th.Text)
-			})
-
-			// Extract stats
-			el.ForEach("td", func(i int, td *colly.HTMLElement) {
-				if i < len(statNames) {
-					stats[statNames[i]] = strings.TrimSpace(td.Text)
+				var statName string
+				if th.DOM.Children().Length() > 0 {
+					// If <th> has children, get the text of the first <span>
+					statName = strings.TrimSpace(th.ChildText("span:first-child"))
+				} else {
+					// If <th> has no children, get its own text
+					statName = strings.TrimSpace(th.Text)
 				}
+				levelStats[statName] = ""
+				fmt.Println("Stat name:", statName)
 			})
-
-			// Add to levelStatsMap
-			if level != "" {
-				levelStatsMap[level] = stats
-			}
 		})
+		// TODO: Get the level's stats
 	})
 
 	// --- Visits the card URL and starts the scrape
 	c.Visit(cardUrl)
-
-	// Debug: Print the collected level stats
-	fmt.Println("Collected Level Stats:", levelStatsMap)
-
 	return cardInfo
 }
