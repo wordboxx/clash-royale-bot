@@ -8,6 +8,8 @@ import (
 	"os"
 	"strings"
 
+	"encoding/json"
+
 	"github.com/gocolly/colly"
 )
 
@@ -16,9 +18,8 @@ var urlPrefix string = "https://www.deckshop.pro"
 
 // STRUCTS
 type CardLevelStats struct {
-	Level     string
-	Hitpoints string
-	Damage    string
+	Level string
+	Stats map[string]string
 }
 
 type CardInfo struct {
@@ -92,13 +93,84 @@ func DownloadCardImage(cardURL string, cardName string, c *colly.Collector) {
 	fmt.Println("Image downloaded successfully:", cardName+".png")
 }
 
+func getGeneralStats(c *colly.Collector, cardInfo *CardInfo) {
+	var generalStatsTable string = "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3 > div > div:nth-child(2) > table > tbody"
+	c.OnHTML(generalStatsTable, func(e *colly.HTMLElement) {
+		e.ForEach("tr", func(_ int, el *colly.HTMLElement) {
+			el.ForEach("th", func(_ int, th *colly.HTMLElement) {
+				statName := strings.TrimSpace(th.Text)
+				statValue := strings.TrimSpace(el.ChildText("td"))
+
+				// Map general stats to CardInfo fields
+				switch statName {
+				case "Hit speed":
+					cardInfo.Hitspeed = statValue
+				case "Speed":
+					cardInfo.Speed = statValue
+				case "Count":
+					cardInfo.Count = statValue
+				case "Range":
+					cardInfo.Range = statValue
+				case "Spell radius":
+					cardInfo.SpellRadius = statValue
+				case "Duration":
+					cardInfo.Duration = statValue
+				case "Tower damage":
+					cardInfo.TowerDamage = statValue
+				}
+			})
+		})
+	})
+}
+
+func getLevelStats(c *colly.Collector, cardInfo *CardInfo) {
+	var levelStatsTable string = "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table"
+	c.OnHTML(levelStatsTable, func(e *colly.HTMLElement) {
+		// --- Get the stat names in the header row
+		var statNames []string
+		var levelStatsTableHeader string = "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table > thead > tr"
+		e.ForEach(levelStatsTableHeader, func(_ int, el *colly.HTMLElement) {
+			el.ForEach("th", func(_ int, th *colly.HTMLElement) {
+				var statName string
+				if th.DOM.Children().Length() > 0 {
+					statName = strings.TrimSpace(th.ChildText("span:first-child"))
+				} else {
+					statName = strings.TrimSpace(th.Text)
+				}
+				statNames = append(statNames, statName)
+			})
+		})
+
+		// --- Get the stat values in the body rows
+		var levelStatsTableBody string = "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table > tbody"
+		e.ForEach(levelStatsTableBody, func(_ int, el *colly.HTMLElement) {
+			el.ForEach("tr", func(_ int, tr *colly.HTMLElement) {
+				var levelStat CardLevelStats
+				levelStat.Stats = make(map[string]string)
+
+				// Extract the level
+				tr.ForEach("th", func(_ int, th *colly.HTMLElement) {
+					levelStat.Level = strings.TrimSpace(th.Text)
+				})
+
+				// Extract the stat values
+				tr.ForEach("td", func(i int, td *colly.HTMLElement) {
+					if i < len(statNames) {
+						value := strings.TrimSpace(td.Text)
+						levelStat.Stats[statNames[i]] = value
+					}
+				})
+
+				cardInfo.LevelStats = append(cardInfo.LevelStats, levelStat)
+			})
+		})
+	})
+}
+
 func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 	var cardInfo CardInfo
-	var miscStats = make(map[string]string)
-	var levelStats = make(map[string]string)
 
 	// VARIABLES
-	// --- URLs
 	cardUrl := urlPrefix + "/card/detail/" + cardName
 
 	// BEFORE, AFTER, AND ERROR FUNCTIONS
@@ -118,41 +190,19 @@ func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 	})
 
 	// SCRAPING
-	// --- Get misc stats (that don't increase with each level)
-	var miscStatsTable string = "body > main > article > section.bg-gradient-to-br.from-gray-body.to-gray-dark.px-page.py-3 > div > div:nth-child(2) > table > tbody"
-	c.OnHTML(miscStatsTable, func(e *colly.HTMLElement) {
-		e.ForEach("tr", func(_ int, el *colly.HTMLElement) {
-			el.ForEach("th", func(_ int, th *colly.HTMLElement) {
-				statName := strings.TrimSpace(th.Text)
-				statValue := strings.TrimSpace(el.ChildText("td"))
-				miscStats[statName] = statValue
-			})
-		})
-	})
-
-	// --- Get level stats (that increase with each level)
-	var levelStatsTable string = "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table"
-	c.OnHTML(levelStatsTable, func(e *colly.HTMLElement) {
-		// --- Get the stat names in the header row
-		var levelStatsTableHeader string = "body > main > article > section.mb-10 > div.grid.md\\:grid-cols-2.gap-5 > div:nth-child(1) > table > thead > tr"
-		e.ForEach(levelStatsTableHeader, func(_ int, el *colly.HTMLElement) {
-			el.ForEach("th", func(_ int, th *colly.HTMLElement) {
-				var statName string
-				if th.DOM.Children().Length() > 0 {
-					// If <th> has children, get the text of the first <span>
-					statName = strings.TrimSpace(th.ChildText("span:first-child"))
-				} else {
-					// If <th> has no children, get its own text
-					statName = strings.TrimSpace(th.Text)
-				}
-				levelStats[statName] = ""
-				fmt.Println("Stat name:", statName)
-			})
-		})
-		// TODO: Get the level's stats
-	})
+	getGeneralStats(c, &cardInfo)
+	getLevelStats(c, &cardInfo)
 
 	// --- Visits the card URL and starts the scrape
 	c.Visit(cardUrl)
+
+	// Pretty-print the full cardInfo data as JSON
+	cardInfoJSON, err := json.MarshalIndent(cardInfo, "", "  ")
+	if err != nil {
+		fmt.Println("Error formatting card info as JSON:", err)
+	} else {
+		fmt.Printf("Card Info for %s:\n%s\n", cardName, string(cardInfoJSON))
+	}
+
 	return cardInfo
 }
