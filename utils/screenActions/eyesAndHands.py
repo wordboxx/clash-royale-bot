@@ -15,7 +15,7 @@ def find_image(image_path, region):
 def define_region():
     screenX, screenY = pyautogui.size()
 
-def smaller_region(location, margin=200):
+def smaller_region(location, margin=50):
     # Expand the region slightly around the last known location
     left, top, width, height = location
     screenX, screenY = pyautogui.size()
