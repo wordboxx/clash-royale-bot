@@ -8,36 +8,37 @@ def find_image(image_path, region):
         print("Image found")
         x, y = pyautogui.center(location)
         pyautogui.moveTo(x, y)
-        return location  # Return the location if found
+        return location
     else:
         print("Not found, searching again...")
 
 def define_region():
     screenX, screenY = pyautogui.size()
 
-def smaller_region(location, margin=50):
+def adjust_search_region(location, screenX, screenY, margin=50):
     # Expand the region slightly around the last known location
+    # (Speeds up the search by reducing the area)
     left, top, width, height = location
-    screenX, screenY = pyautogui.size()
     new_left = max(0, left - margin)
     new_top = max(0, top - margin)
     new_width = min(screenX, left + width + margin) - new_left
     new_height = min(screenY, top + height + margin) - new_top
     return (new_left, new_top, new_width, new_height)
 
-def main():
+def trackImage():
     image_path = os.path.join(os.path.dirname(__file__), "imagesToFind", "test.png")
+    # TODO: region seems redundant, fix this in larger codebase
     region = define_region()
+    screenX, screenY = pyautogui.size()  # Get screen size once
 
     for i in range(50):
         try:
             location = find_image(image_path, region)
             if location:
-                region = smaller_region(location)  # Update the region dynamically
+                region = adjust_search_region(location, screenX, screenY)  # Pass screen dimensions
             else:
                 print("Continuing search in the same region...")  # Keep the current region
         except Exception as e:
-            print(f"An error occurred: {e}. Continuing...")  # Handle unexpected errors and continue
-
-if __name__ == "__main__":
-    main()
+            # Handle unexpected errors and continue if image not found
+            # This will prevent the program from crashing
+            print(f"An error occurred: {e}. Continuing...")
