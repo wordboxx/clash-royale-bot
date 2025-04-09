@@ -8,8 +8,6 @@ import (
 	"os"
 	"strings"
 
-	"encoding/json"
-
 	"github.com/gocolly/colly"
 )
 
@@ -23,14 +21,18 @@ type CardLevelStats struct {
 }
 
 type CardInfo struct {
-	LevelStats  []CardLevelStats
-	Hitspeed    string
-	Speed       string
-	Count       string
-	Range       string
-	SpellRadius string
-	Duration    string
-	TowerDamage string
+	LevelStats   []CardLevelStats
+	Hitspeed     string
+	Speed        string
+	Count        string
+	Range        string
+	SpellRadius  string
+	Duration     string
+	TowerDamage  string
+	AirTroop     bool
+	WinCondition bool
+	Spell        bool
+	IsSpawner    bool
 }
 
 // FUNCTIONS
@@ -40,7 +42,7 @@ func DownloadCardImage(cardURL string, cardName string, c *colly.Collector) {
 	var cardImageURL string
 
 	c.OnRequest(func(r *colly.Request) {
-		fmt.Println("Visitinggg:", r.URL)
+		fmt.Println("Visiting:", r.URL)
 	})
 
 	c.OnError(func(r *colly.Response, err error) {
@@ -118,6 +120,7 @@ func getGeneralStats(c *colly.Collector, cardInfo *CardInfo) {
 				}
 			})
 		})
+
 	})
 }
 
@@ -186,6 +189,51 @@ func getLevelStats(c *colly.Collector, cardInfo *CardInfo) {
 	})
 }
 
+func checkPropertiesAndRoles(c *colly.Collector, cardInfo *CardInfo) {
+	// Checks more general properties and roles of the card
+
+	// --- Check if the card is an air troop
+	var airTroopSelector string = "body > main > article > section:nth-child(5) > div:nth-child(2) > div:nth-child(3) > a:nth-child(1)"
+	c.OnHTML(airTroopSelector, func(e *colly.HTMLElement) {
+		if e.Text == "Air troop" {
+			cardInfo.AirTroop = true
+		}
+	})
+
+	// --- Check if the card is a win condition
+	var winConditionSelector string = "body > main > article > section:nth-child(5) > div:nth-child(2) > div.flex.flex-wrap.gap-2.mb-3 > a:nth-child(1)"
+	c.OnHTML(winConditionSelector, func(e *colly.HTMLElement) {
+		if e.Text == "Win condition" {
+			cardInfo.WinCondition = true
+		}
+	})
+
+	// --- Check if the card is a spell
+	var spellSelector string = "body > main > article > section:nth-child(5) > div:nth-child(2) > div:nth-child(3) > a:nth-child(1)"
+	c.OnHTML(spellSelector, func(e *colly.HTMLElement) {
+		if e.Text == "Spell" {
+			cardInfo.Spell = true
+		}
+	})
+}
+
+func checkIfSpawner(cardInfo *CardInfo) {
+	// Checks if card is spawner by checking if level stat names contain "/card/detail/"
+	for _, property := range cardInfo.LevelStats {
+		keys := make([]string, 0, len(property.Stats))
+		for k := range property.Stats {
+			keys = append(keys, k)
+		}
+		for _, key := range keys {
+			if strings.Contains(key, "/card/detail/") {
+				cardInfo.IsSpawner = true
+				fmt.Println("Spawner:", cardInfo.IsSpawner)
+				return
+			}
+		}
+	}
+}
+
 func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 	var cardInfo CardInfo
 
@@ -211,17 +259,19 @@ func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 	// SCRAPING
 	getGeneralStats(c, &cardInfo)
 	getLevelStats(c, &cardInfo)
+	checkPropertiesAndRoles(c, &cardInfo)
 
 	// --- Visits the card URL and starts the scrape
 	c.Visit(cardUrl)
+	checkIfSpawner(&cardInfo)
 
-	// Pretty-print the full cardInfo data as JSON
-	cardInfoJSON, err := json.MarshalIndent(cardInfo, "", "  ")
-	if err != nil {
-		fmt.Println("Error formatting card info as JSON:", err)
-	} else {
-		fmt.Printf("Card Info for %s:\n%s\n", cardName, string(cardInfoJSON))
-	}
+	// --- Pretty-print the full cardInfo data as JSON
+	// cardInfoJSON, err := json.MarshalIndent(cardInfo, "", "  ")
+	// if err != nil {
+	// 	fmt.Println("Error formatting card info as JSON:", err)
+	// } else {
+	// 	fmt.Printf("Card Info for %s:\n%s\n", cardName, string(cardInfoJSON))
+	// }
 
 	return cardInfo
 }
