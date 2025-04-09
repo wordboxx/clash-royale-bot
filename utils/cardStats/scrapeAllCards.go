@@ -56,7 +56,7 @@ func ScrapeAllCards() {
 			cardName := strings.TrimPrefix(href, "/card/detail/")
 
 			// Get card info
-			GetCardInfo(cardName, c)
+			MakeCardListJson(cardName, []CardInfo{GetCardInfo(cardName, c)})
 
 			// Sleep for 1 second to avoid getting blocked
 			time.Sleep(1 * time.Second)
