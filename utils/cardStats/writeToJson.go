@@ -13,7 +13,7 @@ func MakeCardListJson(cardName string, data []CardInfo) {
 	* This function takes a map and writes it to a JSON file.
 	 */
 
-	var cardListDirectoryFilepath string = "data/cardStats/"
+	var cardListDirectoryFilepath string = "data/cardStatFiles/"
 	var cardListFilepath string = cardListDirectoryFilepath + cardName + ".json"
 
 	// Creates the file and error check
