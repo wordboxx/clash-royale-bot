@@ -18,8 +18,8 @@ var urlPrefix string = "https://www.deckshop.pro"
 
 // STRUCTS
 type CardLevelStats struct {
-	Level string
-	Stats map[string]string
+	Level string            `json:"Level"`
+	Stats map[string]string `json:"Stats"`
 }
 
 type CardInfo struct {
@@ -131,13 +131,19 @@ func getLevelStats(c *colly.Collector, cardInfo *CardInfo) {
 		e.ForEach(levelStatsTableHeader, func(_ int, el *colly.HTMLElement) {
 			el.ForEach("th", func(_ int, th *colly.HTMLElement) {
 				var statName string
+
 				if th.DOM.Children().Length() > 0 {
-					statName = strings.TrimSpace(th.ChildText("span:first-child"))
+					// Check if there's a link and use its href as the stat name
+					if link := th.ChildAttr("a", "href"); link != "" {
+						statName = link
+					} else {
+						statName = strings.TrimSpace(th.ChildText("span:first-child"))
+					}
 				} else {
 					statName = strings.TrimSpace(th.Text)
 				}
-				// Only append if it's not the "Level" column
-				if statName != "Level" {
+				// Only append if it's not the "Level" column and not empty
+				if statName != "Level" && statName != "" {
 					statNames = append(statNames, statName)
 				}
 			})
@@ -149,19 +155,29 @@ func getLevelStats(c *colly.Collector, cardInfo *CardInfo) {
 			el.ForEach("tr", func(_ int, tr *colly.HTMLElement) {
 				var levelStat CardLevelStats
 				levelStat.Stats = make(map[string]string)
+				var currentLevel string
 
 				// Extract the level
 				tr.ForEach("th", func(_ int, th *colly.HTMLElement) {
-					levelStat.Level = strings.TrimSpace(th.Text)
+					// Clean up the level text by taking only the first part before any newlines
+					// This is to avoid getting the "Level 15\n(Mirrored)\n(Mirr.)" text
+					levelText := strings.TrimSpace(th.Text)
+					currentLevel = strings.Split(levelText, "\n")[0]
 				})
 
 				// Extract the stat values
 				tr.ForEach("td", func(i int, td *colly.HTMLElement) {
 					if i < len(statNames) {
 						value := strings.TrimSpace(td.Text)
-						levelStat.Stats[statNames[i]] = value
+						// Only add to stats if the value is not empty
+						if value != "" {
+							levelStat.Stats[statNames[i]] = value
+						}
 					}
 				})
+
+				// Set the level after collecting all stats
+				levelStat.Level = currentLevel
 
 				// Append the levelStat to the cardInfo
 				cardInfo.LevelStats = append(cardInfo.LevelStats, levelStat)
