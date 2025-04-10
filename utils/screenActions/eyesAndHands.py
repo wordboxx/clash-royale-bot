@@ -2,18 +2,21 @@ import pyautogui
 import os
 
 def find_image(image_path, region):
-    # Search within the specified region
-    location = pyautogui.locateOnScreen(image_path, confidence=0.5, region=region)
-    if location is not None:
-        print("Image found")
-        x, y = pyautogui.center(location)
-        pyautogui.moveTo(x, y)
-        return location
-    else:
-        print("Not found, searching again...")
+    try:
+        # Search within the specified region
+        location = pyautogui.locateOnScreen(image_path, confidence=0.8, region=region)
+        if location is not None:
+            print("Image found")
+            x, y = pyautogui.center(location)
+            pyautogui.moveTo(x, y)
+    except Exception as e:
+        print(f"Error in find_image: {e}")
+        find_image(image_path, get_full_screen_region())
 
-def define_region():
+
+def get_full_screen_region():
     screenX, screenY = pyautogui.size()
+    return (0, 0, screenX, screenY)
 
 def adjust_search_region(location, screenX, screenY, margin=50):
     # Expand the region slightly around the last known location
@@ -25,20 +28,7 @@ def adjust_search_region(location, screenX, screenY, margin=50):
     new_height = min(screenY, top + height + margin) - new_top
     return (new_left, new_top, new_width, new_height)
 
-def trackImage():
+if __name__ == "__main__":
     image_path = os.path.join(os.path.dirname(__file__), "imagesToFind", "test.png")
-    # TODO: region seems redundant, fix this in larger codebase
-    region = define_region()
-    screenX, screenY = pyautogui.size()  # Get screen size once
-
-    for i in range(50):
-        try:
-            location = find_image(image_path, region)
-            if location:
-                region = adjust_search_region(location, screenX, screenY)  # Pass screen dimensions
-            else:
-                print("Continuing search in the same region...")  # Keep the current region
-        except Exception as e:
-            # Handle unexpected errors and continue if image not found
-            # This will prevent the program from crashing
-            print(f"An error occurred: {e}. Continuing...")
+    for i in range(10):
+        find_image(image_path, get_full_screen_region())
