@@ -215,10 +215,8 @@ func checkPropertiesAndRoles(c *colly.Collector, cardInfo *CardInfo) {
 			cardInfo.Spell = true
 		}
 	})
-}
 
-func checkIfSpawner(cardInfo *CardInfo) {
-	// Checks if card is spawner by checking if level stat names contain "/card/detail/"
+	// --- Check if the card is a spawner by checking level stat names
 	for _, property := range cardInfo.LevelStats {
 		keys := make([]string, 0, len(property.Stats))
 		for k := range property.Stats {
@@ -263,7 +261,6 @@ func GetCardInfo(cardName string, c *colly.Collector) CardInfo {
 
 	// --- Visits the card URL and starts the scrape
 	c.Visit(cardUrl)
-	checkIfSpawner(&cardInfo)
 
 	// --- Pretty-print the full cardInfo data as JSON
 	// cardInfoJSON, err := json.MarshalIndent(cardInfo, "", "  ")
