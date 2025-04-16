@@ -1,0 +1,59 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "9",
+        "Stats": {
+          "Skeleton level": "9"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "Skeleton level": "10"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "Skeleton level": "11"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Skeleton level": "12"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Skeleton level": "13"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Skeleton level": "14"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "Skeleton level": "15"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "4",
+    "Duration": "10",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": true,
+    "Spell": true,
+    "IsSpawner": false
+  }
+]

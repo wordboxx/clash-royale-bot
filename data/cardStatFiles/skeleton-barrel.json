@@ -1,0 +1,137 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "1",
+        "Stats": {
+          "/card/detail/skeletons": "Level 1",
+          "Death damage": "57",
+          "Hitpoints": "208"
+        }
+      },
+      {
+        "Level": "2",
+        "Stats": {
+          "/card/detail/skeletons": "Level 2",
+          "Death damage": "62",
+          "Hitpoints": "228"
+        }
+      },
+      {
+        "Level": "3",
+        "Stats": {
+          "/card/detail/skeletons": "Level 3",
+          "Death damage": "68",
+          "Hitpoints": "251"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "/card/detail/skeletons": "Level 4",
+          "Death damage": "75",
+          "Hitpoints": "276"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "/card/detail/skeletons": "Level 5",
+          "Death damage": "83",
+          "Hitpoints": "303"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "/card/detail/skeletons": "Level 6",
+          "Death damage": "91",
+          "Hitpoints": "332"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "/card/detail/skeletons": "Level 7",
+          "Death damage": "100",
+          "Hitpoints": "366"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "/card/detail/skeletons": "Level 8",
+          "Death damage": "110",
+          "Hitpoints": "401"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "/card/detail/skeletons": "Level 9",
+          "Death damage": "120",
+          "Hitpoints": "440"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "/card/detail/skeletons": "Level 10",
+          "Death damage": "132",
+          "Hitpoints": "484"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "/card/detail/skeletons": "Level 11",
+          "Death damage": "145",
+          "Hitpoints": "532"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "/card/detail/skeletons": "Level 12",
+          "Death damage": "160",
+          "Hitpoints": "584"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "/card/detail/skeletons": "Level 13",
+          "Death damage": "176",
+          "Hitpoints": "642"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "/card/detail/skeletons": "Level 14",
+          "Death damage": "193",
+          "Hitpoints": "705"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "/card/detail/skeletons": "Level 15",
+          "Death damage": "212",
+          "Hitpoints": "773"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "Fast",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": true,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

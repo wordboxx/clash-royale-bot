@@ -1,0 +1,45 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "11",
+        "Stats": {
+          "Damage": "225",
+          "Hitpoints": "1000"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Damage": "247",
+          "Hitpoints": "1100"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Damage": "272",
+          "Hitpoints": "1210"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Damage": "299",
+          "Hitpoints": "1330"
+        }
+      }
+    ],
+    "Hitspeed": "1.2",
+    "Speed": "Medium",
+    "Count": "",
+    "Range": "5",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

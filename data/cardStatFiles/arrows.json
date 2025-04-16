@@ -1,0 +1,122 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "1",
+        "Stats": {
+          "Damage": "144",
+          "Tower damage": "36"
+        }
+      },
+      {
+        "Level": "2",
+        "Stats": {
+          "Damage": "156",
+          "Tower damage": "39"
+        }
+      },
+      {
+        "Level": "3",
+        "Stats": {
+          "Damage": "174",
+          "Tower damage": "45"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "Damage": "189",
+          "Tower damage": "48"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "Damage": "210",
+          "Tower damage": "54"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "Damage": "228",
+          "Tower damage": "57"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "Damage": "252",
+          "Tower damage": "63"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "Damage": "276",
+          "Tower damage": "69"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "Damage": "303",
+          "Tower damage": "78"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "Damage": "333",
+          "Tower damage": "84"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "Damage": "366",
+          "Tower damage": "93"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Damage": "402",
+          "Tower damage": "102"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Damage": "444",
+          "Tower damage": "111"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Damage": "486",
+          "Tower damage": "123"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "Damage": "534",
+          "Tower damage": "135"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "4",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": true,
+    "IsSpawner": false
+  }
+]

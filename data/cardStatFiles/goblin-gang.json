@@ -1,0 +1,16 @@
+[
+  {
+    "LevelStats": null,
+    "Hitspeed": "",
+    "Speed": "Very fast",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

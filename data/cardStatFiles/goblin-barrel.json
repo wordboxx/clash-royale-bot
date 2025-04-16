@@ -1,0 +1,77 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "6",
+        "Stats": {
+          "Goblins level": "6"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "Goblins level": "7"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "Goblins level": "8"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "Goblins level": "9"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "Goblins level": "10"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "Goblins level": "11"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Goblins level": "12"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Goblins level": "13"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Goblins level": "14"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "Goblins level": "15"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "1.5",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": true,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

@@ -1,0 +1,97 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "6",
+        "Stats": {
+          "/card/detail/spear-goblins": "Level 6",
+          "Damage": "110",
+          "Hitpoints": "2085"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "/card/detail/spear-goblins": "Level 7",
+          "Damage": "121",
+          "Hitpoints": "2293"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "/card/detail/spear-goblins": "Level 8",
+          "Damage": "133",
+          "Hitpoints": "2522"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "/card/detail/spear-goblins": "Level 9",
+          "Damage": "146",
+          "Hitpoints": "2773"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "/card/detail/spear-goblins": "Level 10",
+          "Damage": "160",
+          "Hitpoints": "3044"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "/card/detail/spear-goblins": "Level 11",
+          "Damage": "176",
+          "Hitpoints": "3336"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "/card/detail/spear-goblins": "Level 12",
+          "Damage": "193",
+          "Hitpoints": "3669"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "/card/detail/spear-goblins": "Level 13",
+          "Damage": "212",
+          "Hitpoints": "4024"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "/card/detail/spear-goblins": "Level 14",
+          "Damage": "233",
+          "Hitpoints": "4420"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "/card/detail/spear-goblins": "Level 15",
+          "Damage": "256",
+          "Hitpoints": "4858"
+        }
+      }
+    ],
+    "Hitspeed": "1.7",
+    "Speed": "Medium",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": true,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

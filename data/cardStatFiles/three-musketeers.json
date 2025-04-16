@@ -1,0 +1,108 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "3",
+        "Stats": {
+          "Damage": "103 ×3",
+          "Hitpoints": "340"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "Damage": "113 ×3",
+          "Hitpoints": "374"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "Damage": "124 ×3",
+          "Hitpoints": "411"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "Damage": "136 ×3",
+          "Hitpoints": "452"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "Damage": "150 ×3",
+          "Hitpoints": "496"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "Damage": "164 ×3",
+          "Hitpoints": "544"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "Damage": "181 ×3",
+          "Hitpoints": "598"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "Damage": "198 ×3",
+          "Hitpoints": "656"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "Damage": "218 ×3",
+          "Hitpoints": "720"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Damage": "239 ×3",
+          "Hitpoints": "792"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Damage": "263 ×3",
+          "Hitpoints": "870"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Damage": "289 ×3",
+          "Hitpoints": "955"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "Damage": "318 ×3",
+          "Hitpoints": "1050"
+        }
+      }
+    ],
+    "Hitspeed": "1",
+    "Speed": "Medium",
+    "Count": "3",
+    "Range": "6",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": true,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "9",
+        "Stats": {
+          "Damage": "240",
+          "Tower damage": "48"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "Damage": "264",
+          "Tower damage": "53"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "Damage": "290",
+          "Tower damage": "58"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Damage": "319",
+          "Tower damage": "64"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Damage": "350",
+          "Tower damage": "70"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Damage": "384",
+          "Tower damage": "77"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "Damage": "422",
+          "Tower damage": "85"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

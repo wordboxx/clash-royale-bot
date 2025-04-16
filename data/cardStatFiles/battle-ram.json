@@ -1,0 +1,121 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "3",
+        "Stats": {
+          "/card/detail/barbarians": "Level 3",
+          "Damage": "125",
+          "Hitpoints": "456"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "/card/detail/barbarians": "Level 4",
+          "Damage": "137",
+          "Hitpoints": "501"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "/card/detail/barbarians": "Level 5",
+          "Damage": "151",
+          "Hitpoints": "551"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "/card/detail/barbarians": "Level 6",
+          "Damage": "166",
+          "Hitpoints": "606"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "/card/detail/barbarians": "Level 7",
+          "Damage": "182",
+          "Hitpoints": "665"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "/card/detail/barbarians": "Level 8",
+          "Damage": "200",
+          "Hitpoints": "729"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "/card/detail/barbarians": "Level 9",
+          "Damage": "220",
+          "Hitpoints": "802"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "/card/detail/barbarians": "Level 10",
+          "Damage": "241",
+          "Hitpoints": "880"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "/card/detail/barbarians": "Level 11",
+          "Damage": "265",
+          "Hitpoints": "966"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "/card/detail/barbarians": "Level 12",
+          "Damage": "291",
+          "Hitpoints": "1062"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "/card/detail/barbarians": "Level 13",
+          "Damage": "320",
+          "Hitpoints": "1167"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "/card/detail/barbarians": "Level 14",
+          "Damage": "351",
+          "Hitpoints": "1281"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "/card/detail/barbarians": "Level 15",
+          "Damage": "386",
+          "Hitpoints": "1409"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "Medium",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": true,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

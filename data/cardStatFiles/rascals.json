@@ -1,0 +1,77 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "1",
+        "Stats": {}
+      },
+      {
+        "Level": "2",
+        "Stats": {}
+      },
+      {
+        "Level": "3",
+        "Stats": {}
+      },
+      {
+        "Level": "4",
+        "Stats": {}
+      },
+      {
+        "Level": "5",
+        "Stats": {}
+      },
+      {
+        "Level": "6",
+        "Stats": {}
+      },
+      {
+        "Level": "7",
+        "Stats": {}
+      },
+      {
+        "Level": "8",
+        "Stats": {}
+      },
+      {
+        "Level": "9",
+        "Stats": {}
+      },
+      {
+        "Level": "10",
+        "Stats": {}
+      },
+      {
+        "Level": "11",
+        "Stats": {}
+      },
+      {
+        "Level": "12",
+        "Stats": {}
+      },
+      {
+        "Level": "13",
+        "Stats": {}
+      },
+      {
+        "Level": "14",
+        "Stats": {}
+      },
+      {
+        "Level": "15",
+        "Stats": {}
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "Medium",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

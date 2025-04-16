@@ -1,0 +1,87 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "6",
+        "Stats": {
+          "/card/detail/goblins": "Level 6",
+          "Hitpoints": "900"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "/card/detail/goblins": "Level 7",
+          "Hitpoints": "990"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "/card/detail/goblins": "Level 8",
+          "Hitpoints": "1089"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "/card/detail/goblins": "Level 9",
+          "Hitpoints": "1197"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "/card/detail/goblins": "Level 10",
+          "Hitpoints": "1314"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "/card/detail/goblins": "Level 11",
+          "Hitpoints": "1440"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "/card/detail/goblins": "Level 12",
+          "Hitpoints": "1584"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "/card/detail/goblins": "Level 13",
+          "Hitpoints": "1737"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "/card/detail/goblins": "Level 14",
+          "Hitpoints": "1908"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "/card/detail/goblins": "Level 15",
+          "Hitpoints": "2097"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

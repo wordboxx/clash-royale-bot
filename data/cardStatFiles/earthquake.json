@@ -1,0 +1,121 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "3",
+        "Stats": {
+          "Building damage": "408",
+          "Damage": "117",
+          "Tower damage": "78"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "Building damage": "447",
+          "Damage": "126",
+          "Tower damage": "84"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "Building damage": "492",
+          "Damage": "141",
+          "Tower damage": "93"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "Building damage": "540",
+          "Damage": "153",
+          "Tower damage": "102"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "Building damage": "594",
+          "Damage": "168",
+          "Tower damage": "111"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "Building damage": "651",
+          "Damage": "186",
+          "Tower damage": "123"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "Building damage": "717",
+          "Damage": "204",
+          "Tower damage": "135"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "Building damage": "786",
+          "Damage": "225",
+          "Tower damage": "147"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "Building damage": "864",
+          "Damage": "246",
+          "Tower damage": "162"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Building damage": "948",
+          "Damage": "270",
+          "Tower damage": "177"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Building damage": "1044",
+          "Damage": "297",
+          "Tower damage": "195"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Building damage": "1146",
+          "Damage": "327",
+          "Tower damage": "213"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "Building damage": "1260",
+          "Damage": "360",
+          "Tower damage": "234"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "3.5",
+    "Duration": "3",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": true,
+    "IsSpawner": false
+  }
+]

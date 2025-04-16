@@ -1,0 +1,73 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "9",
+        "Stats": {
+          "/card/detail/bats": "Level 9",
+          "Damage": "260",
+          "Hitpoints": "750"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "/card/detail/bats": "Level 10",
+          "Damage": "286",
+          "Hitpoints": "825"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "/card/detail/bats": "Level 11",
+          "Damage": "314",
+          "Hitpoints": "907"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "/card/detail/bats": "Level 12",
+          "Damage": "345",
+          "Hitpoints": "997"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "/card/detail/bats": "Level 13",
+          "Damage": "379",
+          "Hitpoints": "1095"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "/card/detail/bats": "Level 14",
+          "Damage": "416",
+          "Hitpoints": "1200"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "/card/detail/bats": "Level 15",
+          "Damage": "457",
+          "Hitpoints": "1320"
+        }
+      }
+    ],
+    "Hitspeed": "1.3",
+    "Speed": "Medium",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

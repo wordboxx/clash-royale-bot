@@ -1,0 +1,108 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "3",
+        "Stats": {
+          "/card/detail/fire-spirit": "Level 3",
+          "Hitpoints": "400"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "/card/detail/fire-spirit": "Level 4",
+          "Hitpoints": "440"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "/card/detail/fire-spirit": "Level 5",
+          "Hitpoints": "484"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "/card/detail/fire-spirit": "Level 6",
+          "Hitpoints": "532"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "/card/detail/fire-spirit": "Level 7",
+          "Hitpoints": "584"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "/card/detail/fire-spirit": "Level 8",
+          "Hitpoints": "640"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "/card/detail/fire-spirit": "Level 9",
+          "Hitpoints": "704"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "/card/detail/fire-spirit": "Level 10",
+          "Hitpoints": "772"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "/card/detail/fire-spirit": "Level 11",
+          "Hitpoints": "848"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "/card/detail/fire-spirit": "Level 12",
+          "Hitpoints": "932"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "/card/detail/fire-spirit": "Level 13",
+          "Hitpoints": "1024"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "/card/detail/fire-spirit": "Level 14",
+          "Hitpoints": "1124"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "/card/detail/fire-spirit": "Level 15",
+          "Hitpoints": "1236"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "3",
+        "Stats": {
+          "/card/detail/skeletons": "Level 3",
+          "Hitpoints": "250"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "/card/detail/skeletons": "Level 4",
+          "Hitpoints": "275"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "/card/detail/skeletons": "Level 5",
+          "Hitpoints": "302"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "/card/detail/skeletons": "Level 6",
+          "Hitpoints": "332"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "/card/detail/skeletons": "Level 7",
+          "Hitpoints": "365"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "/card/detail/skeletons": "Level 8",
+          "Hitpoints": "400"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "/card/detail/skeletons": "Level 9",
+          "Hitpoints": "440"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "/card/detail/skeletons": "Level 10",
+          "Hitpoints": "482"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "/card/detail/skeletons": "Level 11",
+          "Hitpoints": "530"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "/card/detail/skeletons": "Level 12",
+          "Hitpoints": "582"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "/card/detail/skeletons": "Level 13",
+          "Hitpoints": "640"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "/card/detail/skeletons": "Level 14",
+          "Hitpoints": "702"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "/card/detail/skeletons": "Level 15",
+          "Hitpoints": "772"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

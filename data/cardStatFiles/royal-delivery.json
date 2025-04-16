@@ -1,0 +1,122 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "1",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 1",
+          "Damage": "171"
+        }
+      },
+      {
+        "Level": "2",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 2",
+          "Damage": "188"
+        }
+      },
+      {
+        "Level": "3",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 3",
+          "Damage": "206"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 4",
+          "Damage": "227"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 5",
+          "Damage": "249"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 6",
+          "Damage": "273"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 7",
+          "Damage": "300"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 8",
+          "Damage": "330"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 9",
+          "Damage": "362"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 10",
+          "Damage": "398"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 11",
+          "Damage": "437"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 12",
+          "Damage": "480"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 13",
+          "Damage": "528"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 14",
+          "Damage": "579"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "/card/detail/royal-recruits": "Level 15",
+          "Damage": "636"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "3",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": true,
+    "IsSpawner": false
+  }
+]

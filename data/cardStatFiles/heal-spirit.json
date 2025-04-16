@@ -1,0 +1,108 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "3",
+        "Stats": {
+          "Damage": "52",
+          "Healing": "208"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "Damage": "57",
+          "Healing": "228"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "Damage": "62",
+          "Healing": "251"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "Damage": "69",
+          "Healing": "276"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "Damage": "75",
+          "Healing": "303"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "Damage": "83",
+          "Healing": "332"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "Damage": "91",
+          "Healing": "366"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "Damage": "100",
+          "Healing": "401"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "Damage": "110",
+          "Healing": "440"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Damage": "121",
+          "Healing": "484"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Damage": "133",
+          "Healing": "532"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Damage": "146",
+          "Healing": "584"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "Damage": "160",
+          "Healing": "642"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "Very fast",
+    "Count": "",
+    "Range": "2.5",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

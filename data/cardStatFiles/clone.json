@@ -1,0 +1,77 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "6",
+        "Stats": {
+          "Cloned cards level": "6"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "Cloned cards level": "7"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "Cloned cards level": "8"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "Cloned cards level": "9"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "Cloned cards level": "10"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "Cloned cards level": "11"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Cloned cards level": "12"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Cloned cards level": "13"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Cloned cards level": "14"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "Cloned cards level": "15"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "3",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": true,
+    "IsSpawner": false
+  }
+]

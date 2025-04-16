@@ -1,0 +1,122 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "1",
+        "Stats": {
+          "Damage": "88",
+          "Hitpoints": "130"
+        }
+      },
+      {
+        "Level": "2",
+        "Stats": {
+          "Damage": "96",
+          "Hitpoints": "143"
+        }
+      },
+      {
+        "Level": "3",
+        "Stats": {
+          "Damage": "106",
+          "Hitpoints": "157"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "Damage": "117",
+          "Hitpoints": "172"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "Damage": "128",
+          "Hitpoints": "189"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "Damage": "140",
+          "Hitpoints": "208"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "Damage": "154",
+          "Hitpoints": "228"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "Damage": "169",
+          "Hitpoints": "250"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "Damage": "186",
+          "Hitpoints": "275"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "Damage": "205",
+          "Hitpoints": "302"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "Damage": "225",
+          "Hitpoints": "332"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Damage": "247",
+          "Hitpoints": "365"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Damage": "271",
+          "Hitpoints": "401"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Damage": "298",
+          "Hitpoints": "440"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "Damage": "327",
+          "Hitpoints": "483"
+        }
+      }
+    ],
+    "Hitspeed": "1.8",
+    "Speed": "Medium",
+    "Count": "",
+    "Range": "4.5",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

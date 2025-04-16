@@ -1,0 +1,108 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "3",
+        "Stats": {
+          "Damage": "70",
+          "Hitpoints": "810"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "Damage": "77",
+          "Hitpoints": "891"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "Damage": "84",
+          "Hitpoints": "980"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "Damage": "93",
+          "Hitpoints": "1077"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "Damage": "102",
+          "Hitpoints": "1182"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "Damage": "112",
+          "Hitpoints": "1296"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "Damage": "123",
+          "Hitpoints": "1425"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "Damage": "135",
+          "Hitpoints": "1563"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "Damage": "148",
+          "Hitpoints": "1717"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Damage": "163",
+          "Hitpoints": "1887"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Damage": "179",
+          "Hitpoints": "2073"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Damage": "196",
+          "Hitpoints": "2276"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "Damage": "216",
+          "Hitpoints": "2502"
+        }
+      }
+    ],
+    "Hitspeed": "1.5",
+    "Speed": "Medium",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

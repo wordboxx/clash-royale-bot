@@ -1,0 +1,49 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "11",
+        "Stats": {
+          "/card/detail/skeletons": "Level 11",
+          "Damage": "205",
+          "Hitpoints": "2300"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "/card/detail/skeletons": "Level 12",
+          "Damage": "225",
+          "Hitpoints": "2530"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "/card/detail/skeletons": "Level 13",
+          "Damage": "248",
+          "Hitpoints": "2783"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "/card/detail/skeletons": "Level 14",
+          "Damage": "272",
+          "Hitpoints": "3059"
+        }
+      }
+    ],
+    "Hitspeed": "1.6",
+    "Speed": "Medium",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

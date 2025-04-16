@@ -1,0 +1,121 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "3",
+        "Stats": {
+          "Damage": "88",
+          "Death damage": "191",
+          "Hitpoints": "614"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "Damage": "96",
+          "Death damage": "210",
+          "Hitpoints": "675"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "Damage": "106",
+          "Death damage": "231",
+          "Hitpoints": "742"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "Damage": "117",
+          "Death damage": "254",
+          "Hitpoints": "816"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "Damage": "128",
+          "Death damage": "278",
+          "Hitpoints": "896"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "Damage": "140",
+          "Death damage": "305",
+          "Hitpoints": "982"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "Damage": "154",
+          "Death damage": "336",
+          "Hitpoints": "1080"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "Damage": "169",
+          "Death damage": "368",
+          "Hitpoints": "1185"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "Damage": "186",
+          "Death damage": "404",
+          "Hitpoints": "1301"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Damage": "205",
+          "Death damage": "445",
+          "Hitpoints": "1430"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Damage": "225",
+          "Death damage": "488",
+          "Hitpoints": "1571"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Damage": "247",
+          "Death damage": "536",
+          "Hitpoints": "1725"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "Damage": "271",
+          "Death damage": "590",
+          "Hitpoints": "1897"
+        }
+      }
+    ],
+    "Hitspeed": "1.2",
+    "Speed": "Medium",
+    "Count": "",
+    "Range": "5",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

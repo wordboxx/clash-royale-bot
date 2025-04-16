@@ -1,0 +1,108 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "3",
+        "Stats": {
+          "Damage": "35 ×4",
+          "Hitpoints": "395"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "Damage": "38 ×4",
+          "Hitpoints": "434"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "Damage": "42 ×4",
+          "Hitpoints": "477"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "Damage": "46 ×4",
+          "Hitpoints": "525"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "Damage": "51 ×4",
+          "Hitpoints": "576"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "Damage": "56 ×4",
+          "Hitpoints": "632"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "Damage": "61 ×4",
+          "Hitpoints": "695"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "Damage": "67 ×4",
+          "Hitpoints": "762"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "Damage": "74 ×4",
+          "Hitpoints": "837"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Damage": "81 ×4",
+          "Hitpoints": "920"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Damage": "89 ×4",
+          "Hitpoints": "1011"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Damage": "98 ×4",
+          "Hitpoints": "1109"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "Damage": "108 ×4",
+          "Hitpoints": "1220"
+        }
+      }
+    ],
+    "Hitspeed": "1.2",
+    "Speed": "Very fast",
+    "Count": "4",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": true,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

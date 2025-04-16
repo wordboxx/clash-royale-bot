@@ -1,0 +1,108 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "3",
+        "Stats": {
+          "Damage": "700",
+          "Tower damage": "175"
+        }
+      },
+      {
+        "Level": "4",
+        "Stats": {
+          "Damage": "770",
+          "Tower damage": "193"
+        }
+      },
+      {
+        "Level": "5",
+        "Stats": {
+          "Damage": "847",
+          "Tower damage": "212"
+        }
+      },
+      {
+        "Level": "6",
+        "Stats": {
+          "Damage": "931",
+          "Tower damage": "233"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "Damage": "1022",
+          "Tower damage": "256"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "Damage": "1120",
+          "Tower damage": "280"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "Damage": "1232",
+          "Tower damage": "308"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "Damage": "1351",
+          "Tower damage": "338"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "Damage": "1484",
+          "Tower damage": "371"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "Damage": "1631",
+          "Tower damage": "408"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "Damage": "1792",
+          "Tower damage": "448"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "Damage": "1967",
+          "Tower damage": "492"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "Damage": "2163",
+          "Tower damage": "541"
+        }
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "2",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": true,
+    "IsSpawner": false
+  }
+]

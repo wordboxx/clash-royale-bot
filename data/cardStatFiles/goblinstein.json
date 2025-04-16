@@ -1,0 +1,33 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "11",
+        "Stats": {}
+      },
+      {
+        "Level": "12",
+        "Stats": {}
+      },
+      {
+        "Level": "13",
+        "Stats": {}
+      },
+      {
+        "Level": "14",
+        "Stats": {}
+      }
+    ],
+    "Hitspeed": "",
+    "Speed": "Medium",
+    "Count": "",
+    "Range": "",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]

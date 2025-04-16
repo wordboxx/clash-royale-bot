@@ -1,0 +1,97 @@
+[
+  {
+    "LevelStats": [
+      {
+        "Level": "6",
+        "Stats": {
+          "/card/detail/skeletons": "Level 6",
+          "Damage": "84",
+          "Hitpoints": "524"
+        }
+      },
+      {
+        "Level": "7",
+        "Stats": {
+          "/card/detail/skeletons": "Level 7",
+          "Damage": "92",
+          "Hitpoints": "576"
+        }
+      },
+      {
+        "Level": "8",
+        "Stats": {
+          "/card/detail/skeletons": "Level 8",
+          "Damage": "101",
+          "Hitpoints": "634"
+        }
+      },
+      {
+        "Level": "9",
+        "Stats": {
+          "/card/detail/skeletons": "Level 9",
+          "Damage": "111",
+          "Hitpoints": "696"
+        }
+      },
+      {
+        "Level": "10",
+        "Stats": {
+          "/card/detail/skeletons": "Level 10",
+          "Damage": "122",
+          "Hitpoints": "765"
+        }
+      },
+      {
+        "Level": "11",
+        "Stats": {
+          "/card/detail/skeletons": "Level 11",
+          "Damage": "134",
+          "Hitpoints": "838"
+        }
+      },
+      {
+        "Level": "12",
+        "Stats": {
+          "/card/detail/skeletons": "Level 12",
+          "Damage": "147",
+          "Hitpoints": "922"
+        }
+      },
+      {
+        "Level": "13",
+        "Stats": {
+          "/card/detail/skeletons": "Level 13",
+          "Damage": "162",
+          "Hitpoints": "1011"
+        }
+      },
+      {
+        "Level": "14",
+        "Stats": {
+          "/card/detail/skeletons": "Level 14",
+          "Damage": "178",
+          "Hitpoints": "1110"
+        }
+      },
+      {
+        "Level": "15",
+        "Stats": {
+          "/card/detail/skeletons": "Level 15",
+          "Damage": "195",
+          "Hitpoints": "1220"
+        }
+      }
+    ],
+    "Hitspeed": "1.1",
+    "Speed": "Medium",
+    "Count": "",
+    "Range": "5",
+    "SpellRadius": "",
+    "Duration": "",
+    "TowerDamage": "",
+    "AirTroop": false,
+    "WinCondition": false,
+    "Spell": false,
+    "IsSpawner": false
+  }
+]
